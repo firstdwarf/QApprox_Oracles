@@ -2,3 +2,5 @@
 *.run
 #Ignored the GHDL source folder, since it needs to be added or built manually
 /ghdl*
+#Ignore a local script I have to update this repository (I'm not a git expert)
+update_git.sh
