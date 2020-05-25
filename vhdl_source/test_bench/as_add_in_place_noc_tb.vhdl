@@ -7,34 +7,38 @@ use ieee.numeric_std.all; -- for type conversions
 --A generic is included here because it can be set when invoking
 --GHDL, allowing the test bench to test component sizes set at
 --synthesis/compile time
-entity add_in_place_tb is
+entity as_add_in_place_noc_tb is
 	generic (
 		size : integer
 	);
-end add_in_place_tb;
+end as_add_in_place_noc_tb;
 
-architecture rtl of add_in_place_tb is
-	component add_in_place
+architecture rtl of as_add_in_place_noc_tb is
+	component as_add_in_place_noc
 		generic (
 			n : integer
 		);
 		port (
+			CTRL : in std_logic;
 			A, B : in std_logic_vector (size-1 downto 0);
+			CTRL_OUT : out std_logic;
 			A_OUT, S : out std_logic_vector (size-1 downto 0)
 		);
 	end component;
 
 	--for cnot0 : cnot use entity work.cnot;
-	signal I, O : std_logic_vector (2*size-1 downto 0);
+	signal I, O : std_logic_vector (2*size downto 0);
 
 	file fin : text;
 	file fout : text;
 
 begin
 	--The size generic is passed from the test bench to the adder
-	add : add_in_place generic map (size) port map (
+	add : as_add_in_place_noc generic map (size) port map (
+			CTRL => I(2*size),
 			A => I (2*size-1 downto size),
 			B => I (size-1 downto 0),
+			CTRL_OUT => O(2*size),
 			A_OUT =>O (2*size-1 downto size),
 			S => O (size-1 downto 0)
 			);
@@ -65,9 +69,9 @@ begin
 		variable iline : line;
 		variable oline : line;
 		--Input test vector
-		variable ivar : std_logic_vector (2*size-1 downto 0);
+		variable ivar : std_logic_vector (2*size downto 0);
 		--Expected test vector (also from input file)
-		variable evar : std_logic_vector (2*size-1 downto 0);
+		variable evar : std_logic_vector (2*size downto 0);
 		variable comma : character;
 
 	begin

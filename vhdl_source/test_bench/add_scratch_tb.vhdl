@@ -39,6 +39,8 @@ begin
 			);
 	process
 		variable l : line;
+		--Count the number of test cases run
+		variable num : integer := 0;
 
 		--This section is for testing via local patterns
 		--type pattern_type is record
@@ -88,6 +90,11 @@ begin
 		file_open(fin, "input.txt", read_mode);
 		file_open(fout, "output.txt", write_mode);
 		while not endfile(fin) loop
+			--Report progress for long tests
+			num := num + 1;
+			assert (num rem 10000 /= 0)
+				report "Running test " & to_string(num) severity note;
+
 			readline(fin, iline);
 			read(iline, ivar);
 			read(iline, comma);
