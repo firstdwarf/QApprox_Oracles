@@ -1,0 +1,20 @@
+This is a lookup table output by another utility. 16 bits of
+atan(2^-index) / 2pi are recorded here.
+
+The bits for index 0 are 00100000000000000
+The bits for index 1 are 00010010111001000
+The bits for index 2 are 00001001111110110
+The bits for index 3 are 00000101000100010
+The bits for index 4 are 00000010100010110
+The bits for index 5 are 00000001010001011
+The bits for index 6 are 00000000101000101
+The bits for index 7 are 00000000010100010
+The bits for index 8 are 00000000001010001
+The bits for index 9 are 00000000000101000
+The bits for index 10 are 00000000000010100
+The bits for index 11 are 00000000000001010
+The bits for index 12 are 00000000000000101
+The bits for index 13 are 00000000000000010
+The bits for index 14 are 00000000000000001
+The bits for index 15 are 00000000000000000
+The bits for index 16 are 00000000000000000

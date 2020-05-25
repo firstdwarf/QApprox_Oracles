@@ -1,0 +1,4 @@
+#Ignored all .run files- the extension I use for compiled C/C++ binaries
+*.run
+#Ignored the GHDL source folder, since it needs to be added or built manually
+/ghdl*
