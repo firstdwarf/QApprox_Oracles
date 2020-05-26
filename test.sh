@@ -11,6 +11,13 @@ then
 	size="-gSIZE=$2"
 fi
 
+#Temporary extension to allow testing lookup tables. This system needs
+#to be rewritten to allow for better argument control
+if ! [ -z "$3" ]
+then
+	index="-gINDEX=$3"
+fi
+
 #The first command-line argument is expected to be the name of the
 #top-level entity in your design- for example, cnot_tb (a test bench) is
 #the top-level entity used to test the cnot design
@@ -43,11 +50,11 @@ then
 	fi
 
 	#This uses a makefile approach to update the analysis of modified files
-	ghdl-0.37/bin/ghdl -m --std=08 --ieee=standard --workdir=$work $1 `echo $size`
+	ghdl-0.37/bin/ghdl -m --std=08 --ieee=standard --workdir=$work $1 `echo $size` `echo $index`
 
 	#Running the simulation doesn't do much of anything without test inputs
 	#and outputs- this section is largely for testing, not synthesis
-	ghdl-0.37/bin/ghdl -r --std=08 --ieee=standard --workdir=$work $1 `echo $size`
+	ghdl-0.37/bin/ghdl -r --std=08 --ieee=standard --workdir=$work $1 `echo $size` `echo $index`
 else
 	#Specify top-level module as a command line argument by entity name
 	echo "ERROR: Need to provide a top-level module entity name"

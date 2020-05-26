@@ -14,12 +14,6 @@ entity angle_lookup is
 end angle_lookup;
 
 architecture rtl of angle_lookup is
-	component cnot
-		port (
-			I : in std_logic_vector (1 downto 0);
-			O : out std_logic_vector (1 downto 0)
-		);
-	end component;
 
 	--Array for storing vectors to look up. The size of the vectors
 	--correspond to the largest currently supported angle vector size,
@@ -29,24 +23,23 @@ architecture rtl of angle_lookup is
 	--Higher-indexed values are all zero!!!
 	type angle_array is array (natural range <>) of std_logic_vector (15 downto 0);
 	constant lut : angle_array := (
-		"00100000000000000", "00010010111001000", "00001001111110110",
-		"00000101000100010", "00000010100010110", "00000001010001011",
-		"00000000101000101", "00000000010100010", "00000000001010001",
-		"00000000000101000", "00000000000010100", "00000000000001010",
-		"00000000000000101", "00000000000000010", "00000000000000001"
+		"0010000000000000", "0001001011100100", "0000100111111011",
+		"0000010100010001", "0000001010001011", "0000000101000101",
+		"0000000010100010", "0000000001010001", "0000000000101000",
+		"0000000000010100", "0000000000001010", "0000000000000101",
+		"0000000000000010", "0000000000000001"
 	);
-	signal angle : std_logic_vector (n-1 downto 0);
 
 begin
-	--Copy the n highest bits from the lut
-	--angle <= lut(index)(15 downto 16-n);
-	--gen1 : for j in n-1 downto 0 generate
-	--	gen2 : if angle(j) = 1 generate
 
-	--		--TODO: make a not gate and use it here!
-	--		cnotx : cnot port map (I => );
-	--	else generate
+	--The evaluation of this block is known at synthesis/compile time
+	gen1 : for j in 0 to n-1 generate
+		gen2 : if lut(index)(15-j) generate
+	--		--Maybe make a not gate here, but I don't know if it's necessary
+			O(n-j-1) <= not I(n-j-1);
+		else generate
+			O(n-j-1) <= I(n-j-1);
+		end generate gen2;
+	end generate gen1;
 
-	--	end generate gen2;
-	--end generate gen1;
 end rtl;
