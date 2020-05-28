@@ -34,8 +34,11 @@ begin
 
 	--The evaluation of this block is known at synthesis/compile time
 	gen1 : for j in 0 to n-1 generate
-		gen2 : if lut(index)(15-j) generate
-	--		--Maybe make a not gate here, but I don't know if it's necessary
+		--This extra -1 here is because I don't think the angle needs
+		--its first bit and the second bit gets used for sign anyway.
+		--This is an experimental change that could be reversed later
+		gen2 : if lut(index)(15-j-1) generate
+			--Maybe make a not gate here, but I don't know if it's necessary
 			O(n-j-1) <= not I(n-j-1);
 		else generate
 			O(n-j-1) <= I(n-j-1);
