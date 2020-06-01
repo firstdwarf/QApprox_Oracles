@@ -1,0 +1,32 @@
+The bits for index 0 are 00100000000000000
+The cos bits for index 0 are 10110101000001001
+The bits for index 1 are 00010010111001000
+The cos bits for index 1 are 10100001111010001
+The bits for index 2 are 00001001111110110
+The cos bits for index 2 are 10011101000100110
+The bits for index 3 are 00000101000100010
+The cos bits for index 3 are 10011011110111001
+The bits for index 4 are 00000010100010110
+The cos bits for index 4 are 10011011100011101
+The bits for index 5 are 00000001010001011
+The cos bits for index 5 are 10011011011110110
+The bits for index 6 are 00000000101000101
+The cos bits for index 6 are 10011011011101101
+The bits for index 7 are 00000000010100010
+The cos bits for index 7 are 10011011011101010
+The bits for index 8 are 00000000001010001
+The cos bits for index 8 are 10011011011101010
+The bits for index 9 are 00000000000101000
+The cos bits for index 9 are 10011011011101001
+The bits for index 10 are 00000000000010100
+The cos bits for index 10 are 10011011011101001
+The bits for index 11 are 00000000000001010
+The cos bits for index 11 are 10011011011101001
+The bits for index 12 are 00000000000000101
+The cos bits for index 12 are 10011011011101001
+The bits for index 13 are 00000000000000010
+The cos bits for index 13 are 10011011011101001
+The bits for index 14 are 00000000000000001
+The cos bits for index 14 are 10011011011101001
+The bits for index 15 are 00000000000000000
+The cos bits for index 15 are 10011011011101001

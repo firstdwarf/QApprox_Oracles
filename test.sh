@@ -11,11 +11,10 @@ then
 	size="-gSIZE=$2"
 fi
 
-#Temporary extension to allow testing lookup tables. This system needs
-#to be rewritten to allow for better argument control
+#Temporary extension to allow testing CORDIC stages
 if ! [ -z "$3" ]
 then
-	index="-gINDEX=$3"
+	index="-gSTAGES=$3"
 fi
 
 #The first command-line argument is expected to be the name of the
