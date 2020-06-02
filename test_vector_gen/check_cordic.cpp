@@ -99,10 +99,11 @@ int main(int argc, char** argv)	{
 		index++;
 	}
 
-	//Data analysis
+	//Data analysis for cos
 	double maxAbs[6] = {0, 0, 0, 0, 0, 0};
 	double var = 0;
-	double exp, val, errorAbs;
+	double errorAbs = 0;
+	double exp, val;
 	for(int i = 0; i < size; i++)	{
 		val = data[i][1];
 		exp = data[i][2];
@@ -119,9 +120,37 @@ int main(int argc, char** argv)	{
 	errorAbs /= size;
 
 	out << "----------------------------" << std::endl;
-	out << "Standard deviation of " << sqrt(var) << std::endl;
-	out << "Mean absolute error of " << errorAbs << std::endl;
-	out << "Max absolute error of " << maxAbs[0] << " at angle " << maxAbs[1] << std::endl;
+	out << "cos: Standard deviation of " << sqrt(var) << std::endl;
+	out << "cos: Mean absolute error of " << errorAbs << std::endl;
+	out << "cos: Max absolute error of " << maxAbs[0] << " at angle " << maxAbs[1] << std::endl;
+	out << maxAbs[2] << "\tfor\t" << maxAbs[3] << std::endl;
+	out << maxAbs[4] << "\tfor\t" << maxAbs[5] << std::endl;
+
+
+	//Data analysis for sin
+	val = 0;
+	errorAbs = 0;
+	for(int i = 0; i < 6; i++) {maxAbs[i] = 0;}
+
+	for(int i = 0; i < size; i++)	{
+		val = data[i][3];
+		exp = data[i][4];
+		var += pow(exp - val, 2);
+		errorAbs += abs(exp - val);
+		if(abs(exp - val) > maxAbs[0])	{
+			maxAbs[0] = abs(exp - val);
+			for(int j = 0; j < 5; j++)	{
+				maxAbs[j+1] = data[i][j];
+			}
+		}
+	}
+	var /= size;
+	errorAbs /= size;
+
+	out << "----------------------------" << std::endl;
+	out << "sin: Standard deviation of " << sqrt(var) << std::endl;
+	out << "sin: Mean absolute error of " << errorAbs << std::endl;
+	out << "sin: Max absolute error of " << maxAbs[0] << " at angle " << maxAbs[1] << std::endl;
 	out << maxAbs[2] << "\tfor\t" << maxAbs[3] << std::endl;
 	out << maxAbs[4] << "\tfor\t" << maxAbs[5] << std::endl;
 }
