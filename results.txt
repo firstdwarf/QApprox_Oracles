@@ -1,0 +1,6 @@
+----------------------------
+Standard deviation of 0.00320223
+Mean absolute error of 0.0024841
+Max absolute error of 0.00779724 at angle 1.52478
+0.0381927	for	0.04599
+0.999207	for	0.998932

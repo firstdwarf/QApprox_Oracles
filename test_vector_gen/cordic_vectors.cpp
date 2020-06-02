@@ -70,7 +70,7 @@ int main(int argc, char** argv)	{
 		std::cout << "Generating test " << i + 1 << " out of " << cases;
 
 		//Generate random cases if necessary- might have duplicates
-		a = (random) ? rand() % cases : i;
+		a = (random) ? rand() % (int) pow(2, bits) : i;
 
 		//Print inputs
 		f << print_bits(a, bits);

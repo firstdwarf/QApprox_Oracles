@@ -92,8 +92,8 @@ int main(int argc, char** argv)	{
 					<< cases*cases*(c + 1);
 
 				//Generate random cases if necessary- might have duplicates
-				a = (random) ? rand() % cases : i;
-				b = (random) ? rand() % cases : j;
+				a = (random) ? rand() % (int) pow(2, bits) : i;
+				b = (random) ? rand() % (int) pow(2, bits) : j;
 
 				//Variable s is the result of an operation acting on a and b.
 				//To test a different binary operation, rewrite the definition

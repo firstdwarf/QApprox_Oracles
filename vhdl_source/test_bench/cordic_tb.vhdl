@@ -85,14 +85,16 @@ begin
 		while not endfile(fin) loop
 			--Report progress for long tests
 			num := num + 1;
-			assert (num rem 10000 /= 0)
+			assert false
 				report "Running test " & to_string(num) severity note;
 
 			readline(fin, iline);
 			read(iline, ivar);
 			I <= ivar;
 			wait for 1 ns;
-			write (oline, to_string(O));
+			write (oline, to_string(I) & string'(",")
+				& to_string(O (2*size + 1 downto size+1))
+				& string'(",") & to_string(O (size downto 0)));
 			writeline (fout, oline);
 		end loop;
 		file_close(fin);

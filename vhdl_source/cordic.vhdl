@@ -76,6 +76,9 @@ architecture rtl of cordic is
 	type angle_sigs is array (stages downto 0) of std_logic_vector (n-2 downto 0);
 	signal cs, as : angle_sigs;
 
+	--Store the angle before it's inverted to represent distance from target
+	signal a_map : std_logic_vector (n-2 downto 0);
+
 	type v_sigs is array (stages downto 0) of std_logic_vector (n downto 0);
 	signal xs, ys : v_sigs;
 begin
@@ -91,10 +94,10 @@ begin
 	cnotr1 : cnot_reg generic map (n-2) port map (
 									CTRL => A(n-2), I => A (n-3 downto 0),
 									CTRL_OUT => a_ctrl(1),
-									O => as(0) (n-3 downto 0));
+									O => a_map (n-3 downto 0));
 
 	--This uses the leading zero ancilla in A (for now)
-	as(0)(n-2) <= A(n);
+	a_map(n-2) <= A(n);
 
 	--Use the first two angle bits (A(n-1) and a_ctrl) to fix X and Y
 	cnotry : cnot_reg generic map (n+1) port map (
@@ -107,6 +110,9 @@ begin
 	cnotrx : cnot_reg generic map (n+1) port map (
 									CTRL => a_ctrl(0), I => xs(stages),
 									CTRL_OUT => A_OUT(n-1), O => X_OUT);
+
+	--Invert angle to represent current distance from target angle
+	as(0) <= not a_map;
 
 	gen1 : for j in 0 to stages-1 generate
 		--Put the cordic stages here
