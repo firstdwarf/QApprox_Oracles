@@ -6,12 +6,16 @@
 int main(int argc, char** argv)	{
 
 	bool verbose = false;
+	int stage = -1;
 	if(argc > 1)	{
 		for(int i = 1; i < argc; i++)	{
 			if(argv[i][0] == '-')	{
 				switch(argv[i][1])	{
 					case 'v':
 						verbose = true;
+						break;
+					case 'i':
+						stage = std::atoi(argv[i] + 3);
 						break;
 					default:
 						break;
@@ -99,16 +103,30 @@ int main(int argc, char** argv)	{
 		index++;
 	}
 
+	double errorBound = floor((1.0/sqrt(1 + pow(2, 2*stage))) * pow(2, bits)) / pow(2, bits);
+
 	//Data analysis for cos
 	double maxAbs[6] = {0, 0, 0, 0, 0, 0};
 	double var = 0;
 	double errorAbs = 0;
 	double exp, val;
+	double temp;
+	int cosWarnings = 0;
 	for(int i = 0; i < size; i++)	{
 		val = data[i][1];
 		exp = data[i][2];
 		var += pow(exp - val, 2);
-		errorAbs += abs(exp - val);
+		temp = abs(exp - val);
+		errorAbs += temp;
+		if(stage != -1 && temp > errorBound)	{
+			if(verbose)	{
+				out << "----------------------------" << std::endl;
+				out << "Error bound exceeded for angle " << data[i][0] << std::endl;
+				out << temp << " > " << errorBound << std::endl;
+				out << "----------------------------" << std::endl;
+			}
+			cosWarnings++;
+		}
 		if(abs(exp - val) > maxAbs[0])	{
 			maxAbs[0] = abs(exp - val);
 			for(int j = 0; j < 5; j++)	{
@@ -125,18 +143,30 @@ int main(int argc, char** argv)	{
 	out << "cos: Max absolute error of " << maxAbs[0] << " at angle " << maxAbs[1] << std::endl;
 	out << maxAbs[2] << "\tfor\t" << maxAbs[3] << std::endl;
 	out << maxAbs[4] << "\tfor\t" << maxAbs[5] << std::endl;
-
+	out << "Cos error warnings: " << cosWarnings << std::endl;
 
 	//Data analysis for sin
 	val = 0;
 	errorAbs = 0;
+	temp = 0;
 	for(int i = 0; i < 6; i++) {maxAbs[i] = 0;}
 
+	int sinWarnings = 0;
 	for(int i = 0; i < size; i++)	{
 		val = data[i][3];
 		exp = data[i][4];
 		var += pow(exp - val, 2);
-		errorAbs += abs(exp - val);
+		temp = abs(exp - val);
+		errorAbs += temp;
+		if(stage != -1 && temp > errorBound)	{
+			if(verbose)	{
+				out << "----------------------------" << std::endl;
+				out << "Error bound exceeded for angle " << data[i][0] << std::endl;
+				out << temp << " > " << errorBound << std::endl;
+				out << "----------------------------" << std::endl;
+			}
+			sinWarnings++;
+		}
 		if(abs(exp - val) > maxAbs[0])	{
 			maxAbs[0] = abs(exp - val);
 			for(int j = 0; j < 5; j++)	{
@@ -153,4 +183,5 @@ int main(int argc, char** argv)	{
 	out << "sin: Max absolute error of " << maxAbs[0] << " at angle " << maxAbs[1] << std::endl;
 	out << maxAbs[2] << "\tfor\t" << maxAbs[3] << std::endl;
 	out << maxAbs[4] << "\tfor\t" << maxAbs[5] << std::endl;
+	out << "Sin error warnings: " << sinWarnings << std::endl;
 }
