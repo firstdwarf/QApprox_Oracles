@@ -26,6 +26,9 @@ for arg
 do gens="${gens} -g${arg}"
 done
 
+#Flag string used to name netlists
+flags=$(echo $gens | sed 's/\-g//g' | tr ' ' '_' | tr -d '=')
+
 #The first command-line argument is expected to be the name of the
 #top-level entity in your design- for example, cnot_tb (a test bench) is
 #the top-level entity used to test the cnot design
@@ -54,7 +57,10 @@ then
 	else
 		#This uses a makefile approach to update the analysis of modified files
 		$ghdl -m --std=08 --ieee=standard --workdir=$work $top
-		$ghdl --synth `echo $gens` --std=08 --workdir=$work $top > "netlist.out"
+		#Synthesize top-level module and output netlist
+		$ghdl --synth `echo $gens` --std=08 --workdir=$work $top > netlists/${top}_${flags}.net
+		#Generate gatecount for netlist automatically
+		sh test_utils/count_gates.sh netlists/${top}_${flags}.net > netlists/${top}_${flags}.gc
 	fi
 else
 	#Specify top-level module as a command line argument by entity name
