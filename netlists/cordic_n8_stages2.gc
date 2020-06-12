@@ -1,0 +1,4 @@
+File netlists/cordic_n8_stages2.net used:
+      96 cnots
+      29 ccnots
+      14 peres gates

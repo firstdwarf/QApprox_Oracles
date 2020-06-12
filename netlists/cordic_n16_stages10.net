@@ -9239,7 +9239,7 @@ begin
   addsub_n1520 <= addsub_ctrl_out; -- (signal)
   -- vhdl_source/cordic_stage.vhdl:99:73
   addsub_n1521 <= addsub_a_out; -- (signal)
-  -- vhdl_source/cordic_stage.vhdl:99:95
+  -- vhdl_source/cordic_stage.vhdl:99:96
   addsub_n1522 <= addsub_s; -- (signal)
   -- vhdl_source/cordic_stage.vhdl:96:8
   addsub : entity work.add_sub_in_place_17 port map (
@@ -9323,7 +9323,7 @@ begin
     o => gen0_cnotr5_o);
   -- vhdl_source/cordic_stage.vhdl:152:50
   n1570_o <= x_1 (15 downto 9);
-  -- vhdl_source/cordic_stage.vhdl:153:49
+  -- vhdl_source/cordic_stage.vhdl:153:50
   n1571_o <= x_1 (8 downto 0);
   -- vhdl_source/cordic_stage.vhdl:157:19
   n1572_o <= as (5);
@@ -9566,7 +9566,7 @@ begin
   addsub_n1410 <= addsub_ctrl_out; -- (signal)
   -- vhdl_source/cordic_stage.vhdl:99:73
   addsub_n1411 <= addsub_a_out; -- (signal)
-  -- vhdl_source/cordic_stage.vhdl:99:95
+  -- vhdl_source/cordic_stage.vhdl:99:96
   addsub_n1412 <= addsub_s; -- (signal)
   -- vhdl_source/cordic_stage.vhdl:96:8
   addsub : entity work.add_sub_in_place_17 port map (
@@ -9650,7 +9650,7 @@ begin
     o => gen0_cnotr5_o);
   -- vhdl_source/cordic_stage.vhdl:152:50
   n1460_o <= x_1 (15 downto 8);
-  -- vhdl_source/cordic_stage.vhdl:153:49
+  -- vhdl_source/cordic_stage.vhdl:153:50
   n1461_o <= x_1 (7 downto 0);
   -- vhdl_source/cordic_stage.vhdl:157:19
   n1462_o <= as (5);
@@ -9893,7 +9893,7 @@ begin
   addsub_n1300 <= addsub_ctrl_out; -- (signal)
   -- vhdl_source/cordic_stage.vhdl:99:73
   addsub_n1301 <= addsub_a_out; -- (signal)
-  -- vhdl_source/cordic_stage.vhdl:99:95
+  -- vhdl_source/cordic_stage.vhdl:99:96
   addsub_n1302 <= addsub_s; -- (signal)
   -- vhdl_source/cordic_stage.vhdl:96:8
   addsub : entity work.add_sub_in_place_17 port map (
@@ -9977,7 +9977,7 @@ begin
     o => gen0_cnotr5_o);
   -- vhdl_source/cordic_stage.vhdl:152:50
   n1350_o <= x_1 (15 downto 7);
-  -- vhdl_source/cordic_stage.vhdl:153:49
+  -- vhdl_source/cordic_stage.vhdl:153:50
   n1351_o <= x_1 (6 downto 0);
   -- vhdl_source/cordic_stage.vhdl:157:19
   n1352_o <= as (5);
@@ -10220,7 +10220,7 @@ begin
   addsub_n1190 <= addsub_ctrl_out; -- (signal)
   -- vhdl_source/cordic_stage.vhdl:99:73
   addsub_n1191 <= addsub_a_out; -- (signal)
-  -- vhdl_source/cordic_stage.vhdl:99:95
+  -- vhdl_source/cordic_stage.vhdl:99:96
   addsub_n1192 <= addsub_s; -- (signal)
   -- vhdl_source/cordic_stage.vhdl:96:8
   addsub : entity work.add_sub_in_place_17 port map (
@@ -10304,7 +10304,7 @@ begin
     o => gen0_cnotr5_o);
   -- vhdl_source/cordic_stage.vhdl:152:50
   n1240_o <= x_1 (15 downto 6);
-  -- vhdl_source/cordic_stage.vhdl:153:49
+  -- vhdl_source/cordic_stage.vhdl:153:50
   n1241_o <= x_1 (5 downto 0);
   -- vhdl_source/cordic_stage.vhdl:157:19
   n1242_o <= as (5);
@@ -10547,7 +10547,7 @@ begin
   addsub_n1080 <= addsub_ctrl_out; -- (signal)
   -- vhdl_source/cordic_stage.vhdl:99:73
   addsub_n1081 <= addsub_a_out; -- (signal)
-  -- vhdl_source/cordic_stage.vhdl:99:95
+  -- vhdl_source/cordic_stage.vhdl:99:96
   addsub_n1082 <= addsub_s; -- (signal)
   -- vhdl_source/cordic_stage.vhdl:96:8
   addsub : entity work.add_sub_in_place_17 port map (
@@ -10631,7 +10631,7 @@ begin
     o => gen0_cnotr5_o);
   -- vhdl_source/cordic_stage.vhdl:152:50
   n1130_o <= x_1 (15 downto 5);
-  -- vhdl_source/cordic_stage.vhdl:153:49
+  -- vhdl_source/cordic_stage.vhdl:153:50
   n1131_o <= x_1 (4 downto 0);
   -- vhdl_source/cordic_stage.vhdl:157:19
   n1132_o <= as (5);
@@ -10874,7 +10874,7 @@ begin
   addsub_n970 <= addsub_ctrl_out; -- (signal)
   -- vhdl_source/cordic_stage.vhdl:99:73
   addsub_n971 <= addsub_a_out; -- (signal)
-  -- vhdl_source/cordic_stage.vhdl:99:95
+  -- vhdl_source/cordic_stage.vhdl:99:96
   addsub_n972 <= addsub_s; -- (signal)
   -- vhdl_source/cordic_stage.vhdl:96:8
   addsub : entity work.add_sub_in_place_17 port map (
@@ -10958,7 +10958,7 @@ begin
     o => gen0_cnotr5_o);
   -- vhdl_source/cordic_stage.vhdl:152:50
   n1020_o <= x_1 (15 downto 4);
-  -- vhdl_source/cordic_stage.vhdl:153:49
+  -- vhdl_source/cordic_stage.vhdl:153:50
   n1021_o <= x_1 (3 downto 0);
   -- vhdl_source/cordic_stage.vhdl:157:19
   n1022_o <= as (5);
@@ -11201,7 +11201,7 @@ begin
   addsub_n860 <= addsub_ctrl_out; -- (signal)
   -- vhdl_source/cordic_stage.vhdl:99:73
   addsub_n861 <= addsub_a_out; -- (signal)
-  -- vhdl_source/cordic_stage.vhdl:99:95
+  -- vhdl_source/cordic_stage.vhdl:99:96
   addsub_n862 <= addsub_s; -- (signal)
   -- vhdl_source/cordic_stage.vhdl:96:8
   addsub : entity work.add_sub_in_place_17 port map (
@@ -11285,7 +11285,7 @@ begin
     o => gen0_cnotr5_o);
   -- vhdl_source/cordic_stage.vhdl:152:50
   n910_o <= x_1 (15 downto 3);
-  -- vhdl_source/cordic_stage.vhdl:153:49
+  -- vhdl_source/cordic_stage.vhdl:153:50
   n911_o <= x_1 (2 downto 0);
   -- vhdl_source/cordic_stage.vhdl:157:19
   n912_o <= as (5);
@@ -11528,7 +11528,7 @@ begin
   addsub_n750 <= addsub_ctrl_out; -- (signal)
   -- vhdl_source/cordic_stage.vhdl:99:73
   addsub_n751 <= addsub_a_out; -- (signal)
-  -- vhdl_source/cordic_stage.vhdl:99:95
+  -- vhdl_source/cordic_stage.vhdl:99:96
   addsub_n752 <= addsub_s; -- (signal)
   -- vhdl_source/cordic_stage.vhdl:96:8
   addsub : entity work.add_sub_in_place_17 port map (
@@ -11612,7 +11612,7 @@ begin
     o => gen0_cnotr5_o);
   -- vhdl_source/cordic_stage.vhdl:152:50
   n800_o <= x_1 (15 downto 2);
-  -- vhdl_source/cordic_stage.vhdl:153:49
+  -- vhdl_source/cordic_stage.vhdl:153:50
   n801_o <= x_1 (1 downto 0);
   -- vhdl_source/cordic_stage.vhdl:157:19
   n802_o <= as (5);
@@ -11855,7 +11855,7 @@ begin
   addsub_n640 <= addsub_ctrl_out; -- (signal)
   -- vhdl_source/cordic_stage.vhdl:99:73
   addsub_n641 <= addsub_a_out; -- (signal)
-  -- vhdl_source/cordic_stage.vhdl:99:95
+  -- vhdl_source/cordic_stage.vhdl:99:96
   addsub_n642 <= addsub_s; -- (signal)
   -- vhdl_source/cordic_stage.vhdl:96:8
   addsub : entity work.add_sub_in_place_17 port map (
@@ -11939,7 +11939,7 @@ begin
     o => gen0_cnotr5_o);
   -- vhdl_source/cordic_stage.vhdl:152:50
   n690_o <= x_1 (15 downto 1);
-  -- vhdl_source/cordic_stage.vhdl:153:49
+  -- vhdl_source/cordic_stage.vhdl:153:50
   n691_o <= x_1 (0);
   -- vhdl_source/cordic_stage.vhdl:157:19
   n692_o <= as (5);
@@ -12153,7 +12153,7 @@ begin
   addsub_n561 <= addsub_ctrl_out; -- (signal)
   -- vhdl_source/cordic_stage.vhdl:99:73
   addsub_n562 <= addsub_a_out; -- (signal)
-  -- vhdl_source/cordic_stage.vhdl:99:95
+  -- vhdl_source/cordic_stage.vhdl:99:96
   addsub_n563 <= addsub_s; -- (signal)
   -- vhdl_source/cordic_stage.vhdl:96:8
   addsub : entity work.add_sub_in_place_17 port map (

@@ -1,0 +1,4 @@
+File netlists/cordic_n16_stages3.net used:
+     202 cnots
+      61 ccnots
+      30 peres gates

@@ -1,4 +1,4 @@
 File netlists/cordich_n16_stages8.net used:
-       0 cnots
-       0 ccnots
-       0 peres gates
+     245 cnots
+      66 ccnots
+      33 peres gates
