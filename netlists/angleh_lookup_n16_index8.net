@@ -1,0 +1,79 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+entity angleh_lookup is
+  generic (
+    n: integer := 16;
+    index: integer := 8
+  );
+  port (
+    I: in std_logic_vector (n - 1 downto 0);
+    O: out std_logic_vector (n - 1 downto 0)
+  );
+end angleh_lookup;
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+architecture rtl of angleh_lookup is
+  signal wrap_I: std_logic_vector (15 downto 0);
+  signal wrap_O: std_logic_vector (15 downto 0);
+  signal n1_o : std_logic;
+  signal n2_o : std_logic;
+  signal n3_o : std_logic;
+  signal n4_o : std_logic;
+  signal n5_o : std_logic;
+  signal n6_o : std_logic;
+  signal n7_o : std_logic;
+  signal n8_o : std_logic;
+  signal n9_o : std_logic;
+  signal n10_o : std_logic;
+  signal n11_o : std_logic;
+  signal n12_o : std_logic;
+  signal n13_o : std_logic;
+  signal n14_o : std_logic;
+  signal n15_o : std_logic;
+  signal n16_o : std_logic;
+  signal n17_o : std_logic;
+  signal n18_o : std_logic_vector (15 downto 0);
+begin
+  wrap_i <= std_logic_vector(i);
+  o <= std_ulogic_vector(wrap_o);
+  wrap_O <= n18_o;
+  -- vhdl_source/angleh_lookup.vhdl:43:37
+  n1_o <= wrap_I (15);
+  -- vhdl_source/angleh_lookup.vhdl:43:37
+  n2_o <= wrap_I (14);
+  -- vhdl_source/angleh_lookup.vhdl:43:37
+  n3_o <= wrap_I (13);
+  -- vhdl_source/angleh_lookup.vhdl:43:37
+  n4_o <= wrap_I (12);
+  -- vhdl_source/angleh_lookup.vhdl:43:37
+  n5_o <= wrap_I (11);
+  -- vhdl_source/angleh_lookup.vhdl:43:37
+  n6_o <= wrap_I (10);
+  -- vhdl_source/angleh_lookup.vhdl:43:37
+  n7_o <= wrap_I (9);
+  -- vhdl_source/angleh_lookup.vhdl:41:41
+  n8_o <= wrap_I (8);
+  -- vhdl_source/angleh_lookup.vhdl:41:36
+  n9_o <= not n8_o;
+  -- vhdl_source/angleh_lookup.vhdl:43:37
+  n10_o <= wrap_I (7);
+  -- vhdl_source/angleh_lookup.vhdl:43:37
+  n11_o <= wrap_I (6);
+  -- vhdl_source/angleh_lookup.vhdl:43:37
+  n12_o <= wrap_I (5);
+  -- vhdl_source/angleh_lookup.vhdl:43:37
+  n13_o <= wrap_I (4);
+  -- vhdl_source/angleh_lookup.vhdl:43:37
+  n14_o <= wrap_I (3);
+  -- vhdl_source/angleh_lookup.vhdl:43:37
+  n15_o <= wrap_I (2);
+  -- vhdl_source/angleh_lookup.vhdl:43:37
+  n16_o <= wrap_I (1);
+  -- vhdl_source/angleh_lookup.vhdl:43:37
+  n17_o <= wrap_I (0);
+  n18_o <= n1_o & n2_o & n3_o & n4_o & n5_o & n6_o & n7_o & n9_o & n10_o & n11_o & n12_o & n13_o & n14_o & n15_o & n16_o & n17_o;
+end rtl;

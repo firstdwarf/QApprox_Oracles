@@ -7,18 +7,6 @@ work=vhdl_source/work
 ghdl=ghdl-master/build/bin/ghdl
 top=$1
 shift
-if ! [ -z "$2" ]
-then
-	#Specify the "size" generic in the top-level module to be
-	#the second command-line argument
-	size="-gSIZE=$2"
-fi
-
-#Temporary extension to allow testing CORDIC stages
-if ! [ -z "$3" ]
-then
-	index="-gSTAGES=$3"
-fi
 
 #Create generics
 gens=''
@@ -44,7 +32,7 @@ then
 	#hierarchy
 	$ghdl -i --std=08 --workdir=$work vhdl_source/*.vhdl
 
-	if [[ "$1" == *_tb ]]
+	if [[ ${top} == *_tb ]]
 		#Detected a substring indicating this is a test bench
 	then
 		$ghdl -i --std=08 --workdir=$work vhdl_source/test_bench/$top.vhdl
@@ -53,7 +41,7 @@ then
 
 		#Running the simulation doesn't do much of anything without test inputs
 		#and outputs- this section is largely for testing, not synthesis
-		$ghdl -r --std=08 --ieee=standard --workdir=$work $top `echo $size` `echo $index`
+		$ghdl -r --std=08 --ieee=standard --workdir=$work $top `echo $gens`
 	else
 		#This uses a makefile approach to update the analysis of modified files
 		$ghdl -m --std=08 --ieee=standard --workdir=$work $top
