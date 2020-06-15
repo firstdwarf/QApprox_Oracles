@@ -1,4 +1,5 @@
 #!/bin/sh
+#These strings occur each time a gate component is instanced
 cnots=$(grep -ow work.cnot $1 | wc -l)
 ccnots=$(grep -ow work.ccnot $1 | wc -l)
 peres=$(grep -ow work.peres $1 | wc -l)

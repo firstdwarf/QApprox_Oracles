@@ -1,0 +1,1 @@
+This directory contains source code for different testing utilities designed to generate test vectors and analyze simulation outputs.
