@@ -7,8 +7,11 @@ int main(int argc, char** argv)	{
 
 	bool verbose = false;
 	int stage = -1;
+	std::string str("cordich");
+	std::string of;
 	if(argc > 1)	{
 		for(int i = 1; i < argc; i++)	{
+			std::string str2(argv[i]);
 			if(argv[i][0] == '-')	{
 				switch(argv[i][1])	{
 					case 'v':
@@ -21,11 +24,14 @@ int main(int argc, char** argv)	{
 						break;
 				}
 			}
+			else if(str2.find(str) != std::string::npos)	{
+				of = str2;
+			}
 		}
 	}
 
-	std::ifstream in("output.txt");
-	std::ofstream out("results.txt", std::ofstream::out);
+	std::ifstream in(of);
+	std::ofstream out(of + ".al", std::ofstream::out);
 	char line[100];
 	unsigned angle;
 	double a, b;

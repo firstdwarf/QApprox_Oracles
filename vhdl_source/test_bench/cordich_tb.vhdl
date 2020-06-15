@@ -81,7 +81,8 @@ begin
 
 		--This is for input files
 		file_open(fin, "input.txt", read_mode);
-		file_open(fout, "output.txt", write_mode);
+		file_open(fout, "sim/cordich_n" & to_string(size)
+			& "_stages" & to_string(stages) & ".sim", write_mode);
 		while not endfile(fin) loop
 			--Report progress for long tests
 			num := num + 1;
@@ -94,7 +95,8 @@ begin
 			wait for 1 ns;
 			write (oline, to_string(I) & string'(",")
 				& to_string(O (2*size + 3 downto size+2))
-				& string'(",") & to_string(O (size+1 downto 0)));
+				& string'(",") & to_string(O (size+1 downto 0))
+				& string'(",") & to_string(A_OUT));
 			writeline (fout, oline);
 		end loop;
 		file_close(fin);
