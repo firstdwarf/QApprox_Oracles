@@ -107,38 +107,49 @@ begin
 								CTRL_OUT => as(2), O => y_4);
 
 	--Generate shifters for addition/subtraction
-	gen0 : if index = 0 generate
-		--Bypass shifters if the index is zero
-		--This shouldn't happen in the cordich algorithm
-		y_1 <= Y;
-		y_5 <= y_4;
-		x_2 <= x_1;
-	else generate
-		--CNOTs used for shifting and appending a leading 0 or 1
-		--Shifting sin to add to cos
-		cnotr3 : cnot_reg generic map (index) port map (
-								CTRL => Y(n),
-								I => W (index + n+2 downto n+3),
-								CTRL_OUT => y_1(n+1 - index),
-								O => y_1 (n+1 downto n+2 - index));
-		y_1 (n - index downto 0) <= Y (n downto index);
+	--Right now these are inverting twice if sin or cos comes in negative
+	--gen0 : if index = 0 generate
+	--	--Bypass shifters if the index is zero
+	--	--This shouldn't happen in the cordich algorithm
+	--	y_1 <= Y;
+	--	y_5 <= y_4;
+	--	x_2 <= x_1;
+	--else generate
+	--	--CNOTs used for shifting and appending a leading 0 or 1
+	--	--Shifting sin to add to cos
+	--	cnotr3 : cnot_reg generic map (index) port map (
+	--							CTRL => Y(n+1),
+	--							I => W (index + n+2 downto n+3),
+	--							CTRL_OUT => y_1(n+1 - index),
+	--							O => y_1 (n+1 downto n+2 - index));
+	--	y_1 (n - index downto 0) <= Y (n downto index);
 
-		--Undoing previous shift
-		cnotr4 : cnot_reg generic map (index) port map (
-								CTRL => y_4(n+1 - index),
-								I => y_4 (n+1 downto n+2 - index),
-								CTRL_OUT => y_5(n+1), O => w_mid);
-		y_5 (n downto 0) <= y_4 (n - index downto 0)
-								& Y (index-1 downto 0);
+	--	--Undoing previous shift
+	--	cnotr4 : cnot_reg generic map (index) port map (
+	--							CTRL => y_4(n+1 - index),
+	--							I => y_4 (n+1 downto n+2 - index),
+	--							CTRL_OUT => y_5(n+1), O => w_mid);
+	--	y_5 (n downto 0) <= y_4 (n - index downto 0)
+	--							& Y (index-1 downto 0);
 
-		--Shifting cos to add to sin
-		cnotr5 : cnot_reg generic map (index) port map (
-								CTRL => x_1(n+1), I => w_mid,
-								CTRL_OUT => x_2(n+1 - index),
-								O => x_2 (n+1 downto n+2 - index));
-		x_2 (n - index downto 0) <= x_1 (n downto index);
-		G (n+2 + index downto n+3) <= x_1 (index-1 downto 0);
-	end generate;
+	--	--Shifting cos to add to sin
+	--	cnotr5 : cnot_reg generic map (index) port map (
+	--							CTRL => x_1(n+1), I => w_mid,
+	--							CTRL_OUT => x_2(n+1 - index),
+	--							O => x_2 (n+1 downto n+2 - index));
+	--	x_2 (n - index downto 0) <= x_1 (n downto index);
+	--	G (n+2 + index downto n+3) <= x_1 (index-1 downto 0);
+	--end generate;
+
+	y_1 (n+1 downto n+2 - index) <= W (index + n+2 downto n+3);
+	y_1 (n+1 - index downto 0) <= Y (n+1 downto index);
+
+	y_5 <= y_4 (n+1 - index downto 0) & Y (index-1 downto 0);
+	w_mid <= y_4 (n+1 downto n+2 - index);
+
+	x_2 (n+1 - index downto 0) <= x_1 (n+1 downto index);
+
+	x_2 (n+1 downto n+2 - index) <= w_mid;
 
 	--Adder to accumulate angle
 	a_cmb <= as(5) & A (n-1 downto 0);

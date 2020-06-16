@@ -33,7 +33,7 @@ int main(int argc, char** argv)	{
 	std::ifstream in(of);
 	std::ofstream out(of + ".al", std::ofstream::out);
 	char line[100];
-	unsigned angle;
+	double angle;
 	double a, b;
 	char* x;
 	char* y;
@@ -50,8 +50,24 @@ int main(int argc, char** argv)	{
 	int index = 0;
 	double rad;
 	while(in.getline(line, 100))	{
-		angle = std::strtol(line, &x, 2);
-		bits = x - line;
+
+		if(line[0] == '1')	{
+			line[0] = '0';
+			for(int i = 1; line[i] != ','; i++)	{
+				if(line[i] == '0')	{
+					line[i] = '1';
+				}
+				else if(line[i] == '1')	{
+					line[i] = '0';
+				}
+			}
+			angle = -1 * (std::strtol(line+1, &x, 2) + 1);
+		}
+		else	{
+			angle = std::strtol(line+1, &x, 2);
+		}
+
+		bits = x - line - 1;
 		x++;
 
 		//Take the 2s complement of x if necessary

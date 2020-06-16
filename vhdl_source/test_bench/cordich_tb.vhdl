@@ -56,7 +56,7 @@ architecture rtl of cordich_tb is
 	file fout : text;
 
 begin
-	a <= '0' & I;
+	a <= '1' & I;
 	w <= (others => '0');
 	c <= (others => '0');
 	x <= (others => '0');
@@ -93,7 +93,7 @@ begin
 			read(iline, ivar);
 			I <= ivar;
 			wait for 1 ns;
-			write (oline, to_string(I) & string'(",")
+			write (oline, to_string(a) & string'(",")
 				& to_string(O (2*size + 3 downto size+2))
 				& string'(",") & to_string(O (size+1 downto 0))
 				& string'(",") & to_string(A_OUT));
