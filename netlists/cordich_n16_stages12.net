@@ -11269,119 +11269,119 @@ begin
     i => y_3,
     ctrl_out => cnotr2_ctrl_out,
     o => cnotr2_o);
-  -- vhdl_source/cordich_stage.vhdl:120:73
-  n1426_o <= y (16);
-  -- vhdl_source/cordich_stage.vhdl:121:71
+  -- vhdl_source/cordich_stage.vhdl:121:73
+  n1426_o <= y (17);
+  -- vhdl_source/cordich_stage.vhdl:122:71
   n1427_o <= w (29 downto 19);
-  -- vhdl_source/cordich_stage.vhdl:122:76
+  -- vhdl_source/cordich_stage.vhdl:123:76
   gen0_cnotr3_n1428 <= gen0_cnotr3_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:123:69
+  -- vhdl_source/cordich_stage.vhdl:124:69
   gen0_cnotr3_n1429 <= gen0_cnotr3_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:119:16
+  -- vhdl_source/cordich_stage.vhdl:120:16
   gen0_cnotr3 : entity work.cnot_reg_11 port map (
     ctrl => n1426_o,
     i => n1427_o,
     ctrl_out => gen0_cnotr3_ctrl_out,
     o => gen0_cnotr3_o);
-  -- vhdl_source/cordich_stage.vhdl:124:46
+  -- vhdl_source/cordich_stage.vhdl:125:46
   n1434_o <= y (16 downto 11);
-  -- vhdl_source/cordich_stage.vhdl:128:75
+  -- vhdl_source/cordich_stage.vhdl:129:75
   n1435_o <= y_4 (6);
-  -- vhdl_source/cordich_stage.vhdl:129:73
+  -- vhdl_source/cordich_stage.vhdl:130:73
   n1436_o <= y_4 (17 downto 7);
-  -- vhdl_source/cordich_stage.vhdl:130:76
+  -- vhdl_source/cordich_stage.vhdl:131:76
   gen0_cnotr4_n1437 <= gen0_cnotr4_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:130:91
+  -- vhdl_source/cordich_stage.vhdl:131:91
   gen0_cnotr4_n1438 <= gen0_cnotr4_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:127:16
+  -- vhdl_source/cordich_stage.vhdl:128:16
   gen0_cnotr4 : entity work.cnot_reg_11 port map (
     ctrl => n1435_o,
     i => n1436_o,
     ctrl_out => gen0_cnotr4_ctrl_out,
     o => gen0_cnotr4_o);
-  -- vhdl_source/cordich_stage.vhdl:131:40
+  -- vhdl_source/cordich_stage.vhdl:132:40
   n1443_o <= y_4 (5 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:132:68
+  -- vhdl_source/cordich_stage.vhdl:133:68
   n1444_o <= y (10 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:132:64
+  -- vhdl_source/cordich_stage.vhdl:133:64
   n1445_o <= n1443_o & n1444_o;
-  -- vhdl_source/cordich_stage.vhdl:136:75
+  -- vhdl_source/cordich_stage.vhdl:137:75
   n1446_o <= x_1 (17);
-  -- vhdl_source/cordich_stage.vhdl:137:76
+  -- vhdl_source/cordich_stage.vhdl:138:76
   gen0_cnotr5_n1447 <= gen0_cnotr5_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:138:69
+  -- vhdl_source/cordich_stage.vhdl:139:69
   gen0_cnotr5_n1448 <= gen0_cnotr5_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:135:16
+  -- vhdl_source/cordich_stage.vhdl:136:16
   gen0_cnotr5 : entity work.cnot_reg_11 port map (
     ctrl => n1446_o,
     i => w_mid,
     ctrl_out => gen0_cnotr5_ctrl_out,
     o => gen0_cnotr5_o);
-  -- vhdl_source/cordich_stage.vhdl:139:48
+  -- vhdl_source/cordich_stage.vhdl:140:48
   n1453_o <= x_1 (16 downto 11);
-  -- vhdl_source/cordich_stage.vhdl:140:50
+  -- vhdl_source/cordich_stage.vhdl:141:50
   n1454_o <= x_1 (10 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:144:19
+  -- vhdl_source/cordich_stage.vhdl:155:19
   n1455_o <= as (5);
-  -- vhdl_source/cordich_stage.vhdl:144:27
+  -- vhdl_source/cordich_stage.vhdl:155:27
   n1456_o <= a (15 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:144:23
+  -- vhdl_source/cordich_stage.vhdl:155:23
   n1457_o <= n1455_o & n1456_o;
-  -- vhdl_source/cordich_stage.vhdl:147:73
+  -- vhdl_source/cordich_stage.vhdl:158:73
   add2_n1458 <= add2_a_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:147:83
+  -- vhdl_source/cordich_stage.vhdl:158:83
   add2_n1459 <= add2_s; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:145:8
+  -- vhdl_source/cordich_stage.vhdl:156:8
   add2 : entity work.add_in_place_17 port map (
     a => c_2,
     b => a_cmb,
     a_out => add2_a_out,
     s => add2_s);
-  -- vhdl_source/cordich_stage.vhdl:150:22
+  -- vhdl_source/cordich_stage.vhdl:161:22
   n1464_o <= a (16);
-  -- vhdl_source/cordich_stage.vhdl:150:17
+  -- vhdl_source/cordich_stage.vhdl:161:17
   n1465_o <= not n1464_o;
-  -- vhdl_source/cordich_stage.vhdl:151:23
+  -- vhdl_source/cordich_stage.vhdl:162:23
   n1466_o <= as (4);
-  -- vhdl_source/cordich_stage.vhdl:151:17
+  -- vhdl_source/cordich_stage.vhdl:162:17
   n1467_o <= not n1466_o;
-  -- vhdl_source/cordich_stage.vhdl:155:74
+  -- vhdl_source/cordich_stage.vhdl:166:74
   n1468_o <= as (2);
-  -- vhdl_source/cordich_stage.vhdl:156:76
+  -- vhdl_source/cordich_stage.vhdl:167:76
   cnotr6_n1469 <= cnotr6_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:156:88
+  -- vhdl_source/cordich_stage.vhdl:167:88
   cnotr6_n1470 <= cnotr6_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:154:8
+  -- vhdl_source/cordich_stage.vhdl:165:8
   cnotr6 : entity work.cnot_reg_17 port map (
     ctrl => n1468_o,
     i => c_1,
     ctrl_out => cnotr6_ctrl_out,
     o => cnotr6_o);
-  -- vhdl_source/cordich_stage.vhdl:159:75
+  -- vhdl_source/cordich_stage.vhdl:170:75
   n1475_o <= c_4 (16);
-  -- vhdl_source/cordich_stage.vhdl:159:89
+  -- vhdl_source/cordich_stage.vhdl:170:89
   n1476_o <= c_4 (15 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:160:76
+  -- vhdl_source/cordich_stage.vhdl:171:76
   cnotr7_n1477 <= cnotr7_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:160:87
+  -- vhdl_source/cordich_stage.vhdl:171:87
   cnotr7_n1478 <= cnotr7_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:158:8
+  -- vhdl_source/cordich_stage.vhdl:169:8
   cnotr7 : entity work.cnot_reg_16 port map (
     ctrl => n1475_o,
     i => n1476_o,
     ctrl_out => cnotr7_ctrl_out,
     o => cnotr7_o);
-  -- vhdl_source/cordich_stage.vhdl:161:21
+  -- vhdl_source/cordich_stage.vhdl:172:21
   n1483_o <= w (0);
-  -- vhdl_source/cordich_stage.vhdl:165:77
+  -- vhdl_source/cordich_stage.vhdl:176:77
   alut1_n1484 <= alut1_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:164:8
+  -- vhdl_source/cordich_stage.vhdl:175:8
   alut1 : entity work.angleh_lookup_17_11 port map (
     i => c,
     o => alut1_o);
-  -- vhdl_source/cordich_stage.vhdl:167:79
+  -- vhdl_source/cordich_stage.vhdl:178:79
   alut2_n1487 <= alut2_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:166:8
+  -- vhdl_source/cordich_stage.vhdl:177:8
   alut2 : entity work.angleh_lookup_17_11 port map (
     i => c_3,
     o => alut2_o);
@@ -11596,119 +11596,119 @@ begin
     i => y_3,
     ctrl_out => cnotr2_ctrl_out,
     o => cnotr2_o);
-  -- vhdl_source/cordich_stage.vhdl:120:73
-  n1316_o <= y (16);
-  -- vhdl_source/cordich_stage.vhdl:121:71
+  -- vhdl_source/cordich_stage.vhdl:121:73
+  n1316_o <= y (17);
+  -- vhdl_source/cordich_stage.vhdl:122:71
   n1317_o <= w (28 downto 19);
-  -- vhdl_source/cordich_stage.vhdl:122:76
+  -- vhdl_source/cordich_stage.vhdl:123:76
   gen0_cnotr3_n1318 <= gen0_cnotr3_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:123:69
+  -- vhdl_source/cordich_stage.vhdl:124:69
   gen0_cnotr3_n1319 <= gen0_cnotr3_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:119:16
+  -- vhdl_source/cordich_stage.vhdl:120:16
   gen0_cnotr3 : entity work.cnot_reg_10 port map (
     ctrl => n1316_o,
     i => n1317_o,
     ctrl_out => gen0_cnotr3_ctrl_out,
     o => gen0_cnotr3_o);
-  -- vhdl_source/cordich_stage.vhdl:124:46
+  -- vhdl_source/cordich_stage.vhdl:125:46
   n1324_o <= y (16 downto 10);
-  -- vhdl_source/cordich_stage.vhdl:128:75
+  -- vhdl_source/cordich_stage.vhdl:129:75
   n1325_o <= y_4 (7);
-  -- vhdl_source/cordich_stage.vhdl:129:73
+  -- vhdl_source/cordich_stage.vhdl:130:73
   n1326_o <= y_4 (17 downto 8);
-  -- vhdl_source/cordich_stage.vhdl:130:76
+  -- vhdl_source/cordich_stage.vhdl:131:76
   gen0_cnotr4_n1327 <= gen0_cnotr4_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:130:91
+  -- vhdl_source/cordich_stage.vhdl:131:91
   gen0_cnotr4_n1328 <= gen0_cnotr4_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:127:16
+  -- vhdl_source/cordich_stage.vhdl:128:16
   gen0_cnotr4 : entity work.cnot_reg_10 port map (
     ctrl => n1325_o,
     i => n1326_o,
     ctrl_out => gen0_cnotr4_ctrl_out,
     o => gen0_cnotr4_o);
-  -- vhdl_source/cordich_stage.vhdl:131:40
+  -- vhdl_source/cordich_stage.vhdl:132:40
   n1333_o <= y_4 (6 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:132:68
+  -- vhdl_source/cordich_stage.vhdl:133:68
   n1334_o <= y (9 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:132:64
+  -- vhdl_source/cordich_stage.vhdl:133:64
   n1335_o <= n1333_o & n1334_o;
-  -- vhdl_source/cordich_stage.vhdl:136:75
+  -- vhdl_source/cordich_stage.vhdl:137:75
   n1336_o <= x_1 (17);
-  -- vhdl_source/cordich_stage.vhdl:137:76
+  -- vhdl_source/cordich_stage.vhdl:138:76
   gen0_cnotr5_n1337 <= gen0_cnotr5_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:138:69
+  -- vhdl_source/cordich_stage.vhdl:139:69
   gen0_cnotr5_n1338 <= gen0_cnotr5_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:135:16
+  -- vhdl_source/cordich_stage.vhdl:136:16
   gen0_cnotr5 : entity work.cnot_reg_10 port map (
     ctrl => n1336_o,
     i => w_mid,
     ctrl_out => gen0_cnotr5_ctrl_out,
     o => gen0_cnotr5_o);
-  -- vhdl_source/cordich_stage.vhdl:139:48
+  -- vhdl_source/cordich_stage.vhdl:140:48
   n1343_o <= x_1 (16 downto 10);
-  -- vhdl_source/cordich_stage.vhdl:140:50
+  -- vhdl_source/cordich_stage.vhdl:141:50
   n1344_o <= x_1 (9 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:144:19
+  -- vhdl_source/cordich_stage.vhdl:155:19
   n1345_o <= as (5);
-  -- vhdl_source/cordich_stage.vhdl:144:27
+  -- vhdl_source/cordich_stage.vhdl:155:27
   n1346_o <= a (15 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:144:23
+  -- vhdl_source/cordich_stage.vhdl:155:23
   n1347_o <= n1345_o & n1346_o;
-  -- vhdl_source/cordich_stage.vhdl:147:73
+  -- vhdl_source/cordich_stage.vhdl:158:73
   add2_n1348 <= add2_a_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:147:83
+  -- vhdl_source/cordich_stage.vhdl:158:83
   add2_n1349 <= add2_s; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:145:8
+  -- vhdl_source/cordich_stage.vhdl:156:8
   add2 : entity work.add_in_place_17 port map (
     a => c_2,
     b => a_cmb,
     a_out => add2_a_out,
     s => add2_s);
-  -- vhdl_source/cordich_stage.vhdl:150:22
+  -- vhdl_source/cordich_stage.vhdl:161:22
   n1354_o <= a (16);
-  -- vhdl_source/cordich_stage.vhdl:150:17
+  -- vhdl_source/cordich_stage.vhdl:161:17
   n1355_o <= not n1354_o;
-  -- vhdl_source/cordich_stage.vhdl:151:23
+  -- vhdl_source/cordich_stage.vhdl:162:23
   n1356_o <= as (4);
-  -- vhdl_source/cordich_stage.vhdl:151:17
+  -- vhdl_source/cordich_stage.vhdl:162:17
   n1357_o <= not n1356_o;
-  -- vhdl_source/cordich_stage.vhdl:155:74
+  -- vhdl_source/cordich_stage.vhdl:166:74
   n1358_o <= as (2);
-  -- vhdl_source/cordich_stage.vhdl:156:76
+  -- vhdl_source/cordich_stage.vhdl:167:76
   cnotr6_n1359 <= cnotr6_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:156:88
+  -- vhdl_source/cordich_stage.vhdl:167:88
   cnotr6_n1360 <= cnotr6_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:154:8
+  -- vhdl_source/cordich_stage.vhdl:165:8
   cnotr6 : entity work.cnot_reg_17 port map (
     ctrl => n1358_o,
     i => c_1,
     ctrl_out => cnotr6_ctrl_out,
     o => cnotr6_o);
-  -- vhdl_source/cordich_stage.vhdl:159:75
+  -- vhdl_source/cordich_stage.vhdl:170:75
   n1365_o <= c_4 (16);
-  -- vhdl_source/cordich_stage.vhdl:159:89
+  -- vhdl_source/cordich_stage.vhdl:170:89
   n1366_o <= c_4 (15 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:160:76
+  -- vhdl_source/cordich_stage.vhdl:171:76
   cnotr7_n1367 <= cnotr7_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:160:87
+  -- vhdl_source/cordich_stage.vhdl:171:87
   cnotr7_n1368 <= cnotr7_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:158:8
+  -- vhdl_source/cordich_stage.vhdl:169:8
   cnotr7 : entity work.cnot_reg_16 port map (
     ctrl => n1365_o,
     i => n1366_o,
     ctrl_out => cnotr7_ctrl_out,
     o => cnotr7_o);
-  -- vhdl_source/cordich_stage.vhdl:161:21
+  -- vhdl_source/cordich_stage.vhdl:172:21
   n1373_o <= w (0);
-  -- vhdl_source/cordich_stage.vhdl:165:77
+  -- vhdl_source/cordich_stage.vhdl:176:77
   alut1_n1374 <= alut1_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:164:8
+  -- vhdl_source/cordich_stage.vhdl:175:8
   alut1 : entity work.angleh_lookup_17_10 port map (
     i => c,
     o => alut1_o);
-  -- vhdl_source/cordich_stage.vhdl:167:79
+  -- vhdl_source/cordich_stage.vhdl:178:79
   alut2_n1377 <= alut2_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:166:8
+  -- vhdl_source/cordich_stage.vhdl:177:8
   alut2 : entity work.angleh_lookup_17_10 port map (
     i => c_3,
     o => alut2_o);
@@ -11923,119 +11923,119 @@ begin
     i => y_3,
     ctrl_out => cnotr2_ctrl_out,
     o => cnotr2_o);
-  -- vhdl_source/cordich_stage.vhdl:120:73
-  n1206_o <= y (16);
-  -- vhdl_source/cordich_stage.vhdl:121:71
+  -- vhdl_source/cordich_stage.vhdl:121:73
+  n1206_o <= y (17);
+  -- vhdl_source/cordich_stage.vhdl:122:71
   n1207_o <= w (27 downto 19);
-  -- vhdl_source/cordich_stage.vhdl:122:76
+  -- vhdl_source/cordich_stage.vhdl:123:76
   gen0_cnotr3_n1208 <= gen0_cnotr3_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:123:69
+  -- vhdl_source/cordich_stage.vhdl:124:69
   gen0_cnotr3_n1209 <= gen0_cnotr3_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:119:16
+  -- vhdl_source/cordich_stage.vhdl:120:16
   gen0_cnotr3 : entity work.cnot_reg_9 port map (
     ctrl => n1206_o,
     i => n1207_o,
     ctrl_out => gen0_cnotr3_ctrl_out,
     o => gen0_cnotr3_o);
-  -- vhdl_source/cordich_stage.vhdl:124:46
+  -- vhdl_source/cordich_stage.vhdl:125:46
   n1214_o <= y (16 downto 9);
-  -- vhdl_source/cordich_stage.vhdl:128:75
+  -- vhdl_source/cordich_stage.vhdl:129:75
   n1215_o <= y_4 (8);
-  -- vhdl_source/cordich_stage.vhdl:129:73
+  -- vhdl_source/cordich_stage.vhdl:130:73
   n1216_o <= y_4 (17 downto 9);
-  -- vhdl_source/cordich_stage.vhdl:130:76
+  -- vhdl_source/cordich_stage.vhdl:131:76
   gen0_cnotr4_n1217 <= gen0_cnotr4_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:130:91
+  -- vhdl_source/cordich_stage.vhdl:131:91
   gen0_cnotr4_n1218 <= gen0_cnotr4_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:127:16
+  -- vhdl_source/cordich_stage.vhdl:128:16
   gen0_cnotr4 : entity work.cnot_reg_9 port map (
     ctrl => n1215_o,
     i => n1216_o,
     ctrl_out => gen0_cnotr4_ctrl_out,
     o => gen0_cnotr4_o);
-  -- vhdl_source/cordich_stage.vhdl:131:40
+  -- vhdl_source/cordich_stage.vhdl:132:40
   n1223_o <= y_4 (7 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:132:68
+  -- vhdl_source/cordich_stage.vhdl:133:68
   n1224_o <= y (8 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:132:64
+  -- vhdl_source/cordich_stage.vhdl:133:64
   n1225_o <= n1223_o & n1224_o;
-  -- vhdl_source/cordich_stage.vhdl:136:75
+  -- vhdl_source/cordich_stage.vhdl:137:75
   n1226_o <= x_1 (17);
-  -- vhdl_source/cordich_stage.vhdl:137:76
+  -- vhdl_source/cordich_stage.vhdl:138:76
   gen0_cnotr5_n1227 <= gen0_cnotr5_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:138:69
+  -- vhdl_source/cordich_stage.vhdl:139:69
   gen0_cnotr5_n1228 <= gen0_cnotr5_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:135:16
+  -- vhdl_source/cordich_stage.vhdl:136:16
   gen0_cnotr5 : entity work.cnot_reg_9 port map (
     ctrl => n1226_o,
     i => w_mid,
     ctrl_out => gen0_cnotr5_ctrl_out,
     o => gen0_cnotr5_o);
-  -- vhdl_source/cordich_stage.vhdl:139:48
+  -- vhdl_source/cordich_stage.vhdl:140:48
   n1233_o <= x_1 (16 downto 9);
-  -- vhdl_source/cordich_stage.vhdl:140:50
+  -- vhdl_source/cordich_stage.vhdl:141:50
   n1234_o <= x_1 (8 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:144:19
+  -- vhdl_source/cordich_stage.vhdl:155:19
   n1235_o <= as (5);
-  -- vhdl_source/cordich_stage.vhdl:144:27
+  -- vhdl_source/cordich_stage.vhdl:155:27
   n1236_o <= a (15 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:144:23
+  -- vhdl_source/cordich_stage.vhdl:155:23
   n1237_o <= n1235_o & n1236_o;
-  -- vhdl_source/cordich_stage.vhdl:147:73
+  -- vhdl_source/cordich_stage.vhdl:158:73
   add2_n1238 <= add2_a_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:147:83
+  -- vhdl_source/cordich_stage.vhdl:158:83
   add2_n1239 <= add2_s; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:145:8
+  -- vhdl_source/cordich_stage.vhdl:156:8
   add2 : entity work.add_in_place_17 port map (
     a => c_2,
     b => a_cmb,
     a_out => add2_a_out,
     s => add2_s);
-  -- vhdl_source/cordich_stage.vhdl:150:22
+  -- vhdl_source/cordich_stage.vhdl:161:22
   n1244_o <= a (16);
-  -- vhdl_source/cordich_stage.vhdl:150:17
+  -- vhdl_source/cordich_stage.vhdl:161:17
   n1245_o <= not n1244_o;
-  -- vhdl_source/cordich_stage.vhdl:151:23
+  -- vhdl_source/cordich_stage.vhdl:162:23
   n1246_o <= as (4);
-  -- vhdl_source/cordich_stage.vhdl:151:17
+  -- vhdl_source/cordich_stage.vhdl:162:17
   n1247_o <= not n1246_o;
-  -- vhdl_source/cordich_stage.vhdl:155:74
+  -- vhdl_source/cordich_stage.vhdl:166:74
   n1248_o <= as (2);
-  -- vhdl_source/cordich_stage.vhdl:156:76
+  -- vhdl_source/cordich_stage.vhdl:167:76
   cnotr6_n1249 <= cnotr6_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:156:88
+  -- vhdl_source/cordich_stage.vhdl:167:88
   cnotr6_n1250 <= cnotr6_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:154:8
+  -- vhdl_source/cordich_stage.vhdl:165:8
   cnotr6 : entity work.cnot_reg_17 port map (
     ctrl => n1248_o,
     i => c_1,
     ctrl_out => cnotr6_ctrl_out,
     o => cnotr6_o);
-  -- vhdl_source/cordich_stage.vhdl:159:75
+  -- vhdl_source/cordich_stage.vhdl:170:75
   n1255_o <= c_4 (16);
-  -- vhdl_source/cordich_stage.vhdl:159:89
+  -- vhdl_source/cordich_stage.vhdl:170:89
   n1256_o <= c_4 (15 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:160:76
+  -- vhdl_source/cordich_stage.vhdl:171:76
   cnotr7_n1257 <= cnotr7_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:160:87
+  -- vhdl_source/cordich_stage.vhdl:171:87
   cnotr7_n1258 <= cnotr7_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:158:8
+  -- vhdl_source/cordich_stage.vhdl:169:8
   cnotr7 : entity work.cnot_reg_16 port map (
     ctrl => n1255_o,
     i => n1256_o,
     ctrl_out => cnotr7_ctrl_out,
     o => cnotr7_o);
-  -- vhdl_source/cordich_stage.vhdl:161:21
+  -- vhdl_source/cordich_stage.vhdl:172:21
   n1263_o <= w (0);
-  -- vhdl_source/cordich_stage.vhdl:165:77
+  -- vhdl_source/cordich_stage.vhdl:176:77
   alut1_n1264 <= alut1_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:164:8
+  -- vhdl_source/cordich_stage.vhdl:175:8
   alut1 : entity work.angleh_lookup_17_9 port map (
     i => c,
     o => alut1_o);
-  -- vhdl_source/cordich_stage.vhdl:167:79
+  -- vhdl_source/cordich_stage.vhdl:178:79
   alut2_n1267 <= alut2_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:166:8
+  -- vhdl_source/cordich_stage.vhdl:177:8
   alut2 : entity work.angleh_lookup_17_9 port map (
     i => c_3,
     o => alut2_o);
@@ -12250,119 +12250,119 @@ begin
     i => y_3,
     ctrl_out => cnotr2_ctrl_out,
     o => cnotr2_o);
-  -- vhdl_source/cordich_stage.vhdl:120:73
-  n1096_o <= y (16);
-  -- vhdl_source/cordich_stage.vhdl:121:71
+  -- vhdl_source/cordich_stage.vhdl:121:73
+  n1096_o <= y (17);
+  -- vhdl_source/cordich_stage.vhdl:122:71
   n1097_o <= w (26 downto 19);
-  -- vhdl_source/cordich_stage.vhdl:122:76
+  -- vhdl_source/cordich_stage.vhdl:123:76
   gen0_cnotr3_n1098 <= gen0_cnotr3_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:123:69
+  -- vhdl_source/cordich_stage.vhdl:124:69
   gen0_cnotr3_n1099 <= gen0_cnotr3_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:119:16
+  -- vhdl_source/cordich_stage.vhdl:120:16
   gen0_cnotr3 : entity work.cnot_reg_8 port map (
     ctrl => n1096_o,
     i => n1097_o,
     ctrl_out => gen0_cnotr3_ctrl_out,
     o => gen0_cnotr3_o);
-  -- vhdl_source/cordich_stage.vhdl:124:46
+  -- vhdl_source/cordich_stage.vhdl:125:46
   n1104_o <= y (16 downto 8);
-  -- vhdl_source/cordich_stage.vhdl:128:75
+  -- vhdl_source/cordich_stage.vhdl:129:75
   n1105_o <= y_4 (9);
-  -- vhdl_source/cordich_stage.vhdl:129:73
+  -- vhdl_source/cordich_stage.vhdl:130:73
   n1106_o <= y_4 (17 downto 10);
-  -- vhdl_source/cordich_stage.vhdl:130:76
+  -- vhdl_source/cordich_stage.vhdl:131:76
   gen0_cnotr4_n1107 <= gen0_cnotr4_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:130:91
+  -- vhdl_source/cordich_stage.vhdl:131:91
   gen0_cnotr4_n1108 <= gen0_cnotr4_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:127:16
+  -- vhdl_source/cordich_stage.vhdl:128:16
   gen0_cnotr4 : entity work.cnot_reg_8 port map (
     ctrl => n1105_o,
     i => n1106_o,
     ctrl_out => gen0_cnotr4_ctrl_out,
     o => gen0_cnotr4_o);
-  -- vhdl_source/cordich_stage.vhdl:131:40
+  -- vhdl_source/cordich_stage.vhdl:132:40
   n1113_o <= y_4 (8 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:132:68
+  -- vhdl_source/cordich_stage.vhdl:133:68
   n1114_o <= y (7 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:132:64
+  -- vhdl_source/cordich_stage.vhdl:133:64
   n1115_o <= n1113_o & n1114_o;
-  -- vhdl_source/cordich_stage.vhdl:136:75
+  -- vhdl_source/cordich_stage.vhdl:137:75
   n1116_o <= x_1 (17);
-  -- vhdl_source/cordich_stage.vhdl:137:76
+  -- vhdl_source/cordich_stage.vhdl:138:76
   gen0_cnotr5_n1117 <= gen0_cnotr5_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:138:69
+  -- vhdl_source/cordich_stage.vhdl:139:69
   gen0_cnotr5_n1118 <= gen0_cnotr5_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:135:16
+  -- vhdl_source/cordich_stage.vhdl:136:16
   gen0_cnotr5 : entity work.cnot_reg_8 port map (
     ctrl => n1116_o,
     i => w_mid,
     ctrl_out => gen0_cnotr5_ctrl_out,
     o => gen0_cnotr5_o);
-  -- vhdl_source/cordich_stage.vhdl:139:48
+  -- vhdl_source/cordich_stage.vhdl:140:48
   n1123_o <= x_1 (16 downto 8);
-  -- vhdl_source/cordich_stage.vhdl:140:50
+  -- vhdl_source/cordich_stage.vhdl:141:50
   n1124_o <= x_1 (7 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:144:19
+  -- vhdl_source/cordich_stage.vhdl:155:19
   n1125_o <= as (5);
-  -- vhdl_source/cordich_stage.vhdl:144:27
+  -- vhdl_source/cordich_stage.vhdl:155:27
   n1126_o <= a (15 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:144:23
+  -- vhdl_source/cordich_stage.vhdl:155:23
   n1127_o <= n1125_o & n1126_o;
-  -- vhdl_source/cordich_stage.vhdl:147:73
+  -- vhdl_source/cordich_stage.vhdl:158:73
   add2_n1128 <= add2_a_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:147:83
+  -- vhdl_source/cordich_stage.vhdl:158:83
   add2_n1129 <= add2_s; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:145:8
+  -- vhdl_source/cordich_stage.vhdl:156:8
   add2 : entity work.add_in_place_17 port map (
     a => c_2,
     b => a_cmb,
     a_out => add2_a_out,
     s => add2_s);
-  -- vhdl_source/cordich_stage.vhdl:150:22
+  -- vhdl_source/cordich_stage.vhdl:161:22
   n1134_o <= a (16);
-  -- vhdl_source/cordich_stage.vhdl:150:17
+  -- vhdl_source/cordich_stage.vhdl:161:17
   n1135_o <= not n1134_o;
-  -- vhdl_source/cordich_stage.vhdl:151:23
+  -- vhdl_source/cordich_stage.vhdl:162:23
   n1136_o <= as (4);
-  -- vhdl_source/cordich_stage.vhdl:151:17
+  -- vhdl_source/cordich_stage.vhdl:162:17
   n1137_o <= not n1136_o;
-  -- vhdl_source/cordich_stage.vhdl:155:74
+  -- vhdl_source/cordich_stage.vhdl:166:74
   n1138_o <= as (2);
-  -- vhdl_source/cordich_stage.vhdl:156:76
+  -- vhdl_source/cordich_stage.vhdl:167:76
   cnotr6_n1139 <= cnotr6_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:156:88
+  -- vhdl_source/cordich_stage.vhdl:167:88
   cnotr6_n1140 <= cnotr6_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:154:8
+  -- vhdl_source/cordich_stage.vhdl:165:8
   cnotr6 : entity work.cnot_reg_17 port map (
     ctrl => n1138_o,
     i => c_1,
     ctrl_out => cnotr6_ctrl_out,
     o => cnotr6_o);
-  -- vhdl_source/cordich_stage.vhdl:159:75
+  -- vhdl_source/cordich_stage.vhdl:170:75
   n1145_o <= c_4 (16);
-  -- vhdl_source/cordich_stage.vhdl:159:89
+  -- vhdl_source/cordich_stage.vhdl:170:89
   n1146_o <= c_4 (15 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:160:76
+  -- vhdl_source/cordich_stage.vhdl:171:76
   cnotr7_n1147 <= cnotr7_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:160:87
+  -- vhdl_source/cordich_stage.vhdl:171:87
   cnotr7_n1148 <= cnotr7_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:158:8
+  -- vhdl_source/cordich_stage.vhdl:169:8
   cnotr7 : entity work.cnot_reg_16 port map (
     ctrl => n1145_o,
     i => n1146_o,
     ctrl_out => cnotr7_ctrl_out,
     o => cnotr7_o);
-  -- vhdl_source/cordich_stage.vhdl:161:21
+  -- vhdl_source/cordich_stage.vhdl:172:21
   n1153_o <= w (0);
-  -- vhdl_source/cordich_stage.vhdl:165:77
+  -- vhdl_source/cordich_stage.vhdl:176:77
   alut1_n1154 <= alut1_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:164:8
+  -- vhdl_source/cordich_stage.vhdl:175:8
   alut1 : entity work.angleh_lookup_17_8 port map (
     i => c,
     o => alut1_o);
-  -- vhdl_source/cordich_stage.vhdl:167:79
+  -- vhdl_source/cordich_stage.vhdl:178:79
   alut2_n1157 <= alut2_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:166:8
+  -- vhdl_source/cordich_stage.vhdl:177:8
   alut2 : entity work.angleh_lookup_17_8 port map (
     i => c_3,
     o => alut2_o);
@@ -12577,119 +12577,119 @@ begin
     i => y_3,
     ctrl_out => cnotr2_ctrl_out,
     o => cnotr2_o);
-  -- vhdl_source/cordich_stage.vhdl:120:73
-  n986_o <= y (16);
-  -- vhdl_source/cordich_stage.vhdl:121:71
+  -- vhdl_source/cordich_stage.vhdl:121:73
+  n986_o <= y (17);
+  -- vhdl_source/cordich_stage.vhdl:122:71
   n987_o <= w (25 downto 19);
-  -- vhdl_source/cordich_stage.vhdl:122:76
+  -- vhdl_source/cordich_stage.vhdl:123:76
   gen0_cnotr3_n988 <= gen0_cnotr3_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:123:69
+  -- vhdl_source/cordich_stage.vhdl:124:69
   gen0_cnotr3_n989 <= gen0_cnotr3_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:119:16
+  -- vhdl_source/cordich_stage.vhdl:120:16
   gen0_cnotr3 : entity work.cnot_reg_7 port map (
     ctrl => n986_o,
     i => n987_o,
     ctrl_out => gen0_cnotr3_ctrl_out,
     o => gen0_cnotr3_o);
-  -- vhdl_source/cordich_stage.vhdl:124:46
+  -- vhdl_source/cordich_stage.vhdl:125:46
   n994_o <= y (16 downto 7);
-  -- vhdl_source/cordich_stage.vhdl:128:75
+  -- vhdl_source/cordich_stage.vhdl:129:75
   n995_o <= y_4 (10);
-  -- vhdl_source/cordich_stage.vhdl:129:73
+  -- vhdl_source/cordich_stage.vhdl:130:73
   n996_o <= y_4 (17 downto 11);
-  -- vhdl_source/cordich_stage.vhdl:130:76
+  -- vhdl_source/cordich_stage.vhdl:131:76
   gen0_cnotr4_n997 <= gen0_cnotr4_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:130:91
+  -- vhdl_source/cordich_stage.vhdl:131:91
   gen0_cnotr4_n998 <= gen0_cnotr4_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:127:16
+  -- vhdl_source/cordich_stage.vhdl:128:16
   gen0_cnotr4 : entity work.cnot_reg_7 port map (
     ctrl => n995_o,
     i => n996_o,
     ctrl_out => gen0_cnotr4_ctrl_out,
     o => gen0_cnotr4_o);
-  -- vhdl_source/cordich_stage.vhdl:131:40
+  -- vhdl_source/cordich_stage.vhdl:132:40
   n1003_o <= y_4 (9 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:132:68
+  -- vhdl_source/cordich_stage.vhdl:133:68
   n1004_o <= y (6 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:132:64
+  -- vhdl_source/cordich_stage.vhdl:133:64
   n1005_o <= n1003_o & n1004_o;
-  -- vhdl_source/cordich_stage.vhdl:136:75
+  -- vhdl_source/cordich_stage.vhdl:137:75
   n1006_o <= x_1 (17);
-  -- vhdl_source/cordich_stage.vhdl:137:76
+  -- vhdl_source/cordich_stage.vhdl:138:76
   gen0_cnotr5_n1007 <= gen0_cnotr5_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:138:69
+  -- vhdl_source/cordich_stage.vhdl:139:69
   gen0_cnotr5_n1008 <= gen0_cnotr5_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:135:16
+  -- vhdl_source/cordich_stage.vhdl:136:16
   gen0_cnotr5 : entity work.cnot_reg_7 port map (
     ctrl => n1006_o,
     i => w_mid,
     ctrl_out => gen0_cnotr5_ctrl_out,
     o => gen0_cnotr5_o);
-  -- vhdl_source/cordich_stage.vhdl:139:48
+  -- vhdl_source/cordich_stage.vhdl:140:48
   n1013_o <= x_1 (16 downto 7);
-  -- vhdl_source/cordich_stage.vhdl:140:50
+  -- vhdl_source/cordich_stage.vhdl:141:50
   n1014_o <= x_1 (6 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:144:19
+  -- vhdl_source/cordich_stage.vhdl:155:19
   n1015_o <= as (5);
-  -- vhdl_source/cordich_stage.vhdl:144:27
+  -- vhdl_source/cordich_stage.vhdl:155:27
   n1016_o <= a (15 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:144:23
+  -- vhdl_source/cordich_stage.vhdl:155:23
   n1017_o <= n1015_o & n1016_o;
-  -- vhdl_source/cordich_stage.vhdl:147:73
+  -- vhdl_source/cordich_stage.vhdl:158:73
   add2_n1018 <= add2_a_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:147:83
+  -- vhdl_source/cordich_stage.vhdl:158:83
   add2_n1019 <= add2_s; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:145:8
+  -- vhdl_source/cordich_stage.vhdl:156:8
   add2 : entity work.add_in_place_17 port map (
     a => c_2,
     b => a_cmb,
     a_out => add2_a_out,
     s => add2_s);
-  -- vhdl_source/cordich_stage.vhdl:150:22
+  -- vhdl_source/cordich_stage.vhdl:161:22
   n1024_o <= a (16);
-  -- vhdl_source/cordich_stage.vhdl:150:17
+  -- vhdl_source/cordich_stage.vhdl:161:17
   n1025_o <= not n1024_o;
-  -- vhdl_source/cordich_stage.vhdl:151:23
+  -- vhdl_source/cordich_stage.vhdl:162:23
   n1026_o <= as (4);
-  -- vhdl_source/cordich_stage.vhdl:151:17
+  -- vhdl_source/cordich_stage.vhdl:162:17
   n1027_o <= not n1026_o;
-  -- vhdl_source/cordich_stage.vhdl:155:74
+  -- vhdl_source/cordich_stage.vhdl:166:74
   n1028_o <= as (2);
-  -- vhdl_source/cordich_stage.vhdl:156:76
+  -- vhdl_source/cordich_stage.vhdl:167:76
   cnotr6_n1029 <= cnotr6_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:156:88
+  -- vhdl_source/cordich_stage.vhdl:167:88
   cnotr6_n1030 <= cnotr6_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:154:8
+  -- vhdl_source/cordich_stage.vhdl:165:8
   cnotr6 : entity work.cnot_reg_17 port map (
     ctrl => n1028_o,
     i => c_1,
     ctrl_out => cnotr6_ctrl_out,
     o => cnotr6_o);
-  -- vhdl_source/cordich_stage.vhdl:159:75
+  -- vhdl_source/cordich_stage.vhdl:170:75
   n1035_o <= c_4 (16);
-  -- vhdl_source/cordich_stage.vhdl:159:89
+  -- vhdl_source/cordich_stage.vhdl:170:89
   n1036_o <= c_4 (15 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:160:76
+  -- vhdl_source/cordich_stage.vhdl:171:76
   cnotr7_n1037 <= cnotr7_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:160:87
+  -- vhdl_source/cordich_stage.vhdl:171:87
   cnotr7_n1038 <= cnotr7_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:158:8
+  -- vhdl_source/cordich_stage.vhdl:169:8
   cnotr7 : entity work.cnot_reg_16 port map (
     ctrl => n1035_o,
     i => n1036_o,
     ctrl_out => cnotr7_ctrl_out,
     o => cnotr7_o);
-  -- vhdl_source/cordich_stage.vhdl:161:21
+  -- vhdl_source/cordich_stage.vhdl:172:21
   n1043_o <= w (0);
-  -- vhdl_source/cordich_stage.vhdl:165:77
+  -- vhdl_source/cordich_stage.vhdl:176:77
   alut1_n1044 <= alut1_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:164:8
+  -- vhdl_source/cordich_stage.vhdl:175:8
   alut1 : entity work.angleh_lookup_17_7 port map (
     i => c,
     o => alut1_o);
-  -- vhdl_source/cordich_stage.vhdl:167:79
+  -- vhdl_source/cordich_stage.vhdl:178:79
   alut2_n1047 <= alut2_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:166:8
+  -- vhdl_source/cordich_stage.vhdl:177:8
   alut2 : entity work.angleh_lookup_17_7 port map (
     i => c_3,
     o => alut2_o);
@@ -12904,119 +12904,119 @@ begin
     i => y_3,
     ctrl_out => cnotr2_ctrl_out,
     o => cnotr2_o);
-  -- vhdl_source/cordich_stage.vhdl:120:73
-  n876_o <= y (16);
-  -- vhdl_source/cordich_stage.vhdl:121:71
+  -- vhdl_source/cordich_stage.vhdl:121:73
+  n876_o <= y (17);
+  -- vhdl_source/cordich_stage.vhdl:122:71
   n877_o <= w (24 downto 19);
-  -- vhdl_source/cordich_stage.vhdl:122:76
+  -- vhdl_source/cordich_stage.vhdl:123:76
   gen0_cnotr3_n878 <= gen0_cnotr3_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:123:69
+  -- vhdl_source/cordich_stage.vhdl:124:69
   gen0_cnotr3_n879 <= gen0_cnotr3_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:119:16
+  -- vhdl_source/cordich_stage.vhdl:120:16
   gen0_cnotr3 : entity work.cnot_reg_6 port map (
     ctrl => n876_o,
     i => n877_o,
     ctrl_out => gen0_cnotr3_ctrl_out,
     o => gen0_cnotr3_o);
-  -- vhdl_source/cordich_stage.vhdl:124:46
+  -- vhdl_source/cordich_stage.vhdl:125:46
   n884_o <= y (16 downto 6);
-  -- vhdl_source/cordich_stage.vhdl:128:75
+  -- vhdl_source/cordich_stage.vhdl:129:75
   n885_o <= y_4 (11);
-  -- vhdl_source/cordich_stage.vhdl:129:73
+  -- vhdl_source/cordich_stage.vhdl:130:73
   n886_o <= y_4 (17 downto 12);
-  -- vhdl_source/cordich_stage.vhdl:130:76
+  -- vhdl_source/cordich_stage.vhdl:131:76
   gen0_cnotr4_n887 <= gen0_cnotr4_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:130:91
+  -- vhdl_source/cordich_stage.vhdl:131:91
   gen0_cnotr4_n888 <= gen0_cnotr4_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:127:16
+  -- vhdl_source/cordich_stage.vhdl:128:16
   gen0_cnotr4 : entity work.cnot_reg_6 port map (
     ctrl => n885_o,
     i => n886_o,
     ctrl_out => gen0_cnotr4_ctrl_out,
     o => gen0_cnotr4_o);
-  -- vhdl_source/cordich_stage.vhdl:131:40
+  -- vhdl_source/cordich_stage.vhdl:132:40
   n893_o <= y_4 (10 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:132:68
+  -- vhdl_source/cordich_stage.vhdl:133:68
   n894_o <= y (5 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:132:64
+  -- vhdl_source/cordich_stage.vhdl:133:64
   n895_o <= n893_o & n894_o;
-  -- vhdl_source/cordich_stage.vhdl:136:75
+  -- vhdl_source/cordich_stage.vhdl:137:75
   n896_o <= x_1 (17);
-  -- vhdl_source/cordich_stage.vhdl:137:76
+  -- vhdl_source/cordich_stage.vhdl:138:76
   gen0_cnotr5_n897 <= gen0_cnotr5_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:138:69
+  -- vhdl_source/cordich_stage.vhdl:139:69
   gen0_cnotr5_n898 <= gen0_cnotr5_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:135:16
+  -- vhdl_source/cordich_stage.vhdl:136:16
   gen0_cnotr5 : entity work.cnot_reg_6 port map (
     ctrl => n896_o,
     i => w_mid,
     ctrl_out => gen0_cnotr5_ctrl_out,
     o => gen0_cnotr5_o);
-  -- vhdl_source/cordich_stage.vhdl:139:48
+  -- vhdl_source/cordich_stage.vhdl:140:48
   n903_o <= x_1 (16 downto 6);
-  -- vhdl_source/cordich_stage.vhdl:140:50
+  -- vhdl_source/cordich_stage.vhdl:141:50
   n904_o <= x_1 (5 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:144:19
+  -- vhdl_source/cordich_stage.vhdl:155:19
   n905_o <= as (5);
-  -- vhdl_source/cordich_stage.vhdl:144:27
+  -- vhdl_source/cordich_stage.vhdl:155:27
   n906_o <= a (15 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:144:23
+  -- vhdl_source/cordich_stage.vhdl:155:23
   n907_o <= n905_o & n906_o;
-  -- vhdl_source/cordich_stage.vhdl:147:73
+  -- vhdl_source/cordich_stage.vhdl:158:73
   add2_n908 <= add2_a_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:147:83
+  -- vhdl_source/cordich_stage.vhdl:158:83
   add2_n909 <= add2_s; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:145:8
+  -- vhdl_source/cordich_stage.vhdl:156:8
   add2 : entity work.add_in_place_17 port map (
     a => c_2,
     b => a_cmb,
     a_out => add2_a_out,
     s => add2_s);
-  -- vhdl_source/cordich_stage.vhdl:150:22
+  -- vhdl_source/cordich_stage.vhdl:161:22
   n914_o <= a (16);
-  -- vhdl_source/cordich_stage.vhdl:150:17
+  -- vhdl_source/cordich_stage.vhdl:161:17
   n915_o <= not n914_o;
-  -- vhdl_source/cordich_stage.vhdl:151:23
+  -- vhdl_source/cordich_stage.vhdl:162:23
   n916_o <= as (4);
-  -- vhdl_source/cordich_stage.vhdl:151:17
+  -- vhdl_source/cordich_stage.vhdl:162:17
   n917_o <= not n916_o;
-  -- vhdl_source/cordich_stage.vhdl:155:74
+  -- vhdl_source/cordich_stage.vhdl:166:74
   n918_o <= as (2);
-  -- vhdl_source/cordich_stage.vhdl:156:76
+  -- vhdl_source/cordich_stage.vhdl:167:76
   cnotr6_n919 <= cnotr6_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:156:88
+  -- vhdl_source/cordich_stage.vhdl:167:88
   cnotr6_n920 <= cnotr6_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:154:8
+  -- vhdl_source/cordich_stage.vhdl:165:8
   cnotr6 : entity work.cnot_reg_17 port map (
     ctrl => n918_o,
     i => c_1,
     ctrl_out => cnotr6_ctrl_out,
     o => cnotr6_o);
-  -- vhdl_source/cordich_stage.vhdl:159:75
+  -- vhdl_source/cordich_stage.vhdl:170:75
   n925_o <= c_4 (16);
-  -- vhdl_source/cordich_stage.vhdl:159:89
+  -- vhdl_source/cordich_stage.vhdl:170:89
   n926_o <= c_4 (15 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:160:76
+  -- vhdl_source/cordich_stage.vhdl:171:76
   cnotr7_n927 <= cnotr7_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:160:87
+  -- vhdl_source/cordich_stage.vhdl:171:87
   cnotr7_n928 <= cnotr7_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:158:8
+  -- vhdl_source/cordich_stage.vhdl:169:8
   cnotr7 : entity work.cnot_reg_16 port map (
     ctrl => n925_o,
     i => n926_o,
     ctrl_out => cnotr7_ctrl_out,
     o => cnotr7_o);
-  -- vhdl_source/cordich_stage.vhdl:161:21
+  -- vhdl_source/cordich_stage.vhdl:172:21
   n933_o <= w (0);
-  -- vhdl_source/cordich_stage.vhdl:165:77
+  -- vhdl_source/cordich_stage.vhdl:176:77
   alut1_n934 <= alut1_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:164:8
+  -- vhdl_source/cordich_stage.vhdl:175:8
   alut1 : entity work.angleh_lookup_17_6 port map (
     i => c,
     o => alut1_o);
-  -- vhdl_source/cordich_stage.vhdl:167:79
+  -- vhdl_source/cordich_stage.vhdl:178:79
   alut2_n937 <= alut2_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:166:8
+  -- vhdl_source/cordich_stage.vhdl:177:8
   alut2 : entity work.angleh_lookup_17_6 port map (
     i => c_3,
     o => alut2_o);
@@ -13231,119 +13231,119 @@ begin
     i => y_3,
     ctrl_out => cnotr2_ctrl_out,
     o => cnotr2_o);
-  -- vhdl_source/cordich_stage.vhdl:120:73
-  n766_o <= y (16);
-  -- vhdl_source/cordich_stage.vhdl:121:71
+  -- vhdl_source/cordich_stage.vhdl:121:73
+  n766_o <= y (17);
+  -- vhdl_source/cordich_stage.vhdl:122:71
   n767_o <= w (23 downto 19);
-  -- vhdl_source/cordich_stage.vhdl:122:76
+  -- vhdl_source/cordich_stage.vhdl:123:76
   gen0_cnotr3_n768 <= gen0_cnotr3_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:123:69
+  -- vhdl_source/cordich_stage.vhdl:124:69
   gen0_cnotr3_n769 <= gen0_cnotr3_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:119:16
+  -- vhdl_source/cordich_stage.vhdl:120:16
   gen0_cnotr3 : entity work.cnot_reg_5 port map (
     ctrl => n766_o,
     i => n767_o,
     ctrl_out => gen0_cnotr3_ctrl_out,
     o => gen0_cnotr3_o);
-  -- vhdl_source/cordich_stage.vhdl:124:46
+  -- vhdl_source/cordich_stage.vhdl:125:46
   n774_o <= y (16 downto 5);
-  -- vhdl_source/cordich_stage.vhdl:128:75
+  -- vhdl_source/cordich_stage.vhdl:129:75
   n775_o <= y_4 (12);
-  -- vhdl_source/cordich_stage.vhdl:129:73
+  -- vhdl_source/cordich_stage.vhdl:130:73
   n776_o <= y_4 (17 downto 13);
-  -- vhdl_source/cordich_stage.vhdl:130:76
+  -- vhdl_source/cordich_stage.vhdl:131:76
   gen0_cnotr4_n777 <= gen0_cnotr4_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:130:91
+  -- vhdl_source/cordich_stage.vhdl:131:91
   gen0_cnotr4_n778 <= gen0_cnotr4_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:127:16
+  -- vhdl_source/cordich_stage.vhdl:128:16
   gen0_cnotr4 : entity work.cnot_reg_5 port map (
     ctrl => n775_o,
     i => n776_o,
     ctrl_out => gen0_cnotr4_ctrl_out,
     o => gen0_cnotr4_o);
-  -- vhdl_source/cordich_stage.vhdl:131:40
+  -- vhdl_source/cordich_stage.vhdl:132:40
   n783_o <= y_4 (11 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:132:68
+  -- vhdl_source/cordich_stage.vhdl:133:68
   n784_o <= y (4 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:132:64
+  -- vhdl_source/cordich_stage.vhdl:133:64
   n785_o <= n783_o & n784_o;
-  -- vhdl_source/cordich_stage.vhdl:136:75
+  -- vhdl_source/cordich_stage.vhdl:137:75
   n786_o <= x_1 (17);
-  -- vhdl_source/cordich_stage.vhdl:137:76
+  -- vhdl_source/cordich_stage.vhdl:138:76
   gen0_cnotr5_n787 <= gen0_cnotr5_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:138:69
+  -- vhdl_source/cordich_stage.vhdl:139:69
   gen0_cnotr5_n788 <= gen0_cnotr5_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:135:16
+  -- vhdl_source/cordich_stage.vhdl:136:16
   gen0_cnotr5 : entity work.cnot_reg_5 port map (
     ctrl => n786_o,
     i => w_mid,
     ctrl_out => gen0_cnotr5_ctrl_out,
     o => gen0_cnotr5_o);
-  -- vhdl_source/cordich_stage.vhdl:139:48
+  -- vhdl_source/cordich_stage.vhdl:140:48
   n793_o <= x_1 (16 downto 5);
-  -- vhdl_source/cordich_stage.vhdl:140:50
+  -- vhdl_source/cordich_stage.vhdl:141:50
   n794_o <= x_1 (4 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:144:19
+  -- vhdl_source/cordich_stage.vhdl:155:19
   n795_o <= as (5);
-  -- vhdl_source/cordich_stage.vhdl:144:27
+  -- vhdl_source/cordich_stage.vhdl:155:27
   n796_o <= a (15 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:144:23
+  -- vhdl_source/cordich_stage.vhdl:155:23
   n797_o <= n795_o & n796_o;
-  -- vhdl_source/cordich_stage.vhdl:147:73
+  -- vhdl_source/cordich_stage.vhdl:158:73
   add2_n798 <= add2_a_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:147:83
+  -- vhdl_source/cordich_stage.vhdl:158:83
   add2_n799 <= add2_s; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:145:8
+  -- vhdl_source/cordich_stage.vhdl:156:8
   add2 : entity work.add_in_place_17 port map (
     a => c_2,
     b => a_cmb,
     a_out => add2_a_out,
     s => add2_s);
-  -- vhdl_source/cordich_stage.vhdl:150:22
+  -- vhdl_source/cordich_stage.vhdl:161:22
   n804_o <= a (16);
-  -- vhdl_source/cordich_stage.vhdl:150:17
+  -- vhdl_source/cordich_stage.vhdl:161:17
   n805_o <= not n804_o;
-  -- vhdl_source/cordich_stage.vhdl:151:23
+  -- vhdl_source/cordich_stage.vhdl:162:23
   n806_o <= as (4);
-  -- vhdl_source/cordich_stage.vhdl:151:17
+  -- vhdl_source/cordich_stage.vhdl:162:17
   n807_o <= not n806_o;
-  -- vhdl_source/cordich_stage.vhdl:155:74
+  -- vhdl_source/cordich_stage.vhdl:166:74
   n808_o <= as (2);
-  -- vhdl_source/cordich_stage.vhdl:156:76
+  -- vhdl_source/cordich_stage.vhdl:167:76
   cnotr6_n809 <= cnotr6_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:156:88
+  -- vhdl_source/cordich_stage.vhdl:167:88
   cnotr6_n810 <= cnotr6_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:154:8
+  -- vhdl_source/cordich_stage.vhdl:165:8
   cnotr6 : entity work.cnot_reg_17 port map (
     ctrl => n808_o,
     i => c_1,
     ctrl_out => cnotr6_ctrl_out,
     o => cnotr6_o);
-  -- vhdl_source/cordich_stage.vhdl:159:75
+  -- vhdl_source/cordich_stage.vhdl:170:75
   n815_o <= c_4 (16);
-  -- vhdl_source/cordich_stage.vhdl:159:89
+  -- vhdl_source/cordich_stage.vhdl:170:89
   n816_o <= c_4 (15 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:160:76
+  -- vhdl_source/cordich_stage.vhdl:171:76
   cnotr7_n817 <= cnotr7_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:160:87
+  -- vhdl_source/cordich_stage.vhdl:171:87
   cnotr7_n818 <= cnotr7_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:158:8
+  -- vhdl_source/cordich_stage.vhdl:169:8
   cnotr7 : entity work.cnot_reg_16 port map (
     ctrl => n815_o,
     i => n816_o,
     ctrl_out => cnotr7_ctrl_out,
     o => cnotr7_o);
-  -- vhdl_source/cordich_stage.vhdl:161:21
+  -- vhdl_source/cordich_stage.vhdl:172:21
   n823_o <= w (0);
-  -- vhdl_source/cordich_stage.vhdl:165:77
+  -- vhdl_source/cordich_stage.vhdl:176:77
   alut1_n824 <= alut1_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:164:8
+  -- vhdl_source/cordich_stage.vhdl:175:8
   alut1 : entity work.angleh_lookup_17_5 port map (
     i => c,
     o => alut1_o);
-  -- vhdl_source/cordich_stage.vhdl:167:79
+  -- vhdl_source/cordich_stage.vhdl:178:79
   alut2_n827 <= alut2_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:166:8
+  -- vhdl_source/cordich_stage.vhdl:177:8
   alut2 : entity work.angleh_lookup_17_5 port map (
     i => c_3,
     o => alut2_o);
@@ -13558,119 +13558,119 @@ begin
     i => y_3,
     ctrl_out => cnotr2_ctrl_out,
     o => cnotr2_o);
-  -- vhdl_source/cordich_stage.vhdl:120:73
-  n656_o <= y (16);
-  -- vhdl_source/cordich_stage.vhdl:121:71
+  -- vhdl_source/cordich_stage.vhdl:121:73
+  n656_o <= y (17);
+  -- vhdl_source/cordich_stage.vhdl:122:71
   n657_o <= w (22 downto 19);
-  -- vhdl_source/cordich_stage.vhdl:122:76
+  -- vhdl_source/cordich_stage.vhdl:123:76
   gen0_cnotr3_n658 <= gen0_cnotr3_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:123:69
+  -- vhdl_source/cordich_stage.vhdl:124:69
   gen0_cnotr3_n659 <= gen0_cnotr3_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:119:16
+  -- vhdl_source/cordich_stage.vhdl:120:16
   gen0_cnotr3 : entity work.cnot_reg_4 port map (
     ctrl => n656_o,
     i => n657_o,
     ctrl_out => gen0_cnotr3_ctrl_out,
     o => gen0_cnotr3_o);
-  -- vhdl_source/cordich_stage.vhdl:124:46
+  -- vhdl_source/cordich_stage.vhdl:125:46
   n664_o <= y (16 downto 4);
-  -- vhdl_source/cordich_stage.vhdl:128:75
+  -- vhdl_source/cordich_stage.vhdl:129:75
   n665_o <= y_4 (13);
-  -- vhdl_source/cordich_stage.vhdl:129:73
+  -- vhdl_source/cordich_stage.vhdl:130:73
   n666_o <= y_4 (17 downto 14);
-  -- vhdl_source/cordich_stage.vhdl:130:76
+  -- vhdl_source/cordich_stage.vhdl:131:76
   gen0_cnotr4_n667 <= gen0_cnotr4_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:130:91
+  -- vhdl_source/cordich_stage.vhdl:131:91
   gen0_cnotr4_n668 <= gen0_cnotr4_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:127:16
+  -- vhdl_source/cordich_stage.vhdl:128:16
   gen0_cnotr4 : entity work.cnot_reg_4 port map (
     ctrl => n665_o,
     i => n666_o,
     ctrl_out => gen0_cnotr4_ctrl_out,
     o => gen0_cnotr4_o);
-  -- vhdl_source/cordich_stage.vhdl:131:40
+  -- vhdl_source/cordich_stage.vhdl:132:40
   n673_o <= y_4 (12 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:132:68
+  -- vhdl_source/cordich_stage.vhdl:133:68
   n674_o <= y (3 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:132:64
+  -- vhdl_source/cordich_stage.vhdl:133:64
   n675_o <= n673_o & n674_o;
-  -- vhdl_source/cordich_stage.vhdl:136:75
+  -- vhdl_source/cordich_stage.vhdl:137:75
   n676_o <= x_1 (17);
-  -- vhdl_source/cordich_stage.vhdl:137:76
+  -- vhdl_source/cordich_stage.vhdl:138:76
   gen0_cnotr5_n677 <= gen0_cnotr5_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:138:69
+  -- vhdl_source/cordich_stage.vhdl:139:69
   gen0_cnotr5_n678 <= gen0_cnotr5_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:135:16
+  -- vhdl_source/cordich_stage.vhdl:136:16
   gen0_cnotr5 : entity work.cnot_reg_4 port map (
     ctrl => n676_o,
     i => w_mid,
     ctrl_out => gen0_cnotr5_ctrl_out,
     o => gen0_cnotr5_o);
-  -- vhdl_source/cordich_stage.vhdl:139:48
+  -- vhdl_source/cordich_stage.vhdl:140:48
   n683_o <= x_1 (16 downto 4);
-  -- vhdl_source/cordich_stage.vhdl:140:50
+  -- vhdl_source/cordich_stage.vhdl:141:50
   n684_o <= x_1 (3 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:144:19
+  -- vhdl_source/cordich_stage.vhdl:155:19
   n685_o <= as (5);
-  -- vhdl_source/cordich_stage.vhdl:144:27
+  -- vhdl_source/cordich_stage.vhdl:155:27
   n686_o <= a (15 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:144:23
+  -- vhdl_source/cordich_stage.vhdl:155:23
   n687_o <= n685_o & n686_o;
-  -- vhdl_source/cordich_stage.vhdl:147:73
+  -- vhdl_source/cordich_stage.vhdl:158:73
   add2_n688 <= add2_a_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:147:83
+  -- vhdl_source/cordich_stage.vhdl:158:83
   add2_n689 <= add2_s; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:145:8
+  -- vhdl_source/cordich_stage.vhdl:156:8
   add2 : entity work.add_in_place_17 port map (
     a => c_2,
     b => a_cmb,
     a_out => add2_a_out,
     s => add2_s);
-  -- vhdl_source/cordich_stage.vhdl:150:22
+  -- vhdl_source/cordich_stage.vhdl:161:22
   n694_o <= a (16);
-  -- vhdl_source/cordich_stage.vhdl:150:17
+  -- vhdl_source/cordich_stage.vhdl:161:17
   n695_o <= not n694_o;
-  -- vhdl_source/cordich_stage.vhdl:151:23
+  -- vhdl_source/cordich_stage.vhdl:162:23
   n696_o <= as (4);
-  -- vhdl_source/cordich_stage.vhdl:151:17
+  -- vhdl_source/cordich_stage.vhdl:162:17
   n697_o <= not n696_o;
-  -- vhdl_source/cordich_stage.vhdl:155:74
+  -- vhdl_source/cordich_stage.vhdl:166:74
   n698_o <= as (2);
-  -- vhdl_source/cordich_stage.vhdl:156:76
+  -- vhdl_source/cordich_stage.vhdl:167:76
   cnotr6_n699 <= cnotr6_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:156:88
+  -- vhdl_source/cordich_stage.vhdl:167:88
   cnotr6_n700 <= cnotr6_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:154:8
+  -- vhdl_source/cordich_stage.vhdl:165:8
   cnotr6 : entity work.cnot_reg_17 port map (
     ctrl => n698_o,
     i => c_1,
     ctrl_out => cnotr6_ctrl_out,
     o => cnotr6_o);
-  -- vhdl_source/cordich_stage.vhdl:159:75
+  -- vhdl_source/cordich_stage.vhdl:170:75
   n705_o <= c_4 (16);
-  -- vhdl_source/cordich_stage.vhdl:159:89
+  -- vhdl_source/cordich_stage.vhdl:170:89
   n706_o <= c_4 (15 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:160:76
+  -- vhdl_source/cordich_stage.vhdl:171:76
   cnotr7_n707 <= cnotr7_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:160:87
+  -- vhdl_source/cordich_stage.vhdl:171:87
   cnotr7_n708 <= cnotr7_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:158:8
+  -- vhdl_source/cordich_stage.vhdl:169:8
   cnotr7 : entity work.cnot_reg_16 port map (
     ctrl => n705_o,
     i => n706_o,
     ctrl_out => cnotr7_ctrl_out,
     o => cnotr7_o);
-  -- vhdl_source/cordich_stage.vhdl:161:21
+  -- vhdl_source/cordich_stage.vhdl:172:21
   n713_o <= w (0);
-  -- vhdl_source/cordich_stage.vhdl:165:77
+  -- vhdl_source/cordich_stage.vhdl:176:77
   alut1_n714 <= alut1_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:164:8
+  -- vhdl_source/cordich_stage.vhdl:175:8
   alut1 : entity work.angleh_lookup_17_4 port map (
     i => c,
     o => alut1_o);
-  -- vhdl_source/cordich_stage.vhdl:167:79
+  -- vhdl_source/cordich_stage.vhdl:178:79
   alut2_n717 <= alut2_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:166:8
+  -- vhdl_source/cordich_stage.vhdl:177:8
   alut2 : entity work.angleh_lookup_17_4 port map (
     i => c_3,
     o => alut2_o);
@@ -13885,119 +13885,119 @@ begin
     i => y_3,
     ctrl_out => cnotr2_ctrl_out,
     o => cnotr2_o);
-  -- vhdl_source/cordich_stage.vhdl:120:73
-  n546_o <= y (16);
-  -- vhdl_source/cordich_stage.vhdl:121:71
+  -- vhdl_source/cordich_stage.vhdl:121:73
+  n546_o <= y (17);
+  -- vhdl_source/cordich_stage.vhdl:122:71
   n547_o <= w (21 downto 19);
-  -- vhdl_source/cordich_stage.vhdl:122:76
+  -- vhdl_source/cordich_stage.vhdl:123:76
   gen0_cnotr3_n548 <= gen0_cnotr3_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:123:69
+  -- vhdl_source/cordich_stage.vhdl:124:69
   gen0_cnotr3_n549 <= gen0_cnotr3_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:119:16
+  -- vhdl_source/cordich_stage.vhdl:120:16
   gen0_cnotr3 : entity work.cnot_reg_3 port map (
     ctrl => n546_o,
     i => n547_o,
     ctrl_out => gen0_cnotr3_ctrl_out,
     o => gen0_cnotr3_o);
-  -- vhdl_source/cordich_stage.vhdl:124:46
+  -- vhdl_source/cordich_stage.vhdl:125:46
   n554_o <= y (16 downto 3);
-  -- vhdl_source/cordich_stage.vhdl:128:75
+  -- vhdl_source/cordich_stage.vhdl:129:75
   n555_o <= y_4 (14);
-  -- vhdl_source/cordich_stage.vhdl:129:73
+  -- vhdl_source/cordich_stage.vhdl:130:73
   n556_o <= y_4 (17 downto 15);
-  -- vhdl_source/cordich_stage.vhdl:130:76
+  -- vhdl_source/cordich_stage.vhdl:131:76
   gen0_cnotr4_n557 <= gen0_cnotr4_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:130:91
+  -- vhdl_source/cordich_stage.vhdl:131:91
   gen0_cnotr4_n558 <= gen0_cnotr4_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:127:16
+  -- vhdl_source/cordich_stage.vhdl:128:16
   gen0_cnotr4 : entity work.cnot_reg_3 port map (
     ctrl => n555_o,
     i => n556_o,
     ctrl_out => gen0_cnotr4_ctrl_out,
     o => gen0_cnotr4_o);
-  -- vhdl_source/cordich_stage.vhdl:131:40
+  -- vhdl_source/cordich_stage.vhdl:132:40
   n563_o <= y_4 (13 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:132:68
+  -- vhdl_source/cordich_stage.vhdl:133:68
   n564_o <= y (2 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:132:64
+  -- vhdl_source/cordich_stage.vhdl:133:64
   n565_o <= n563_o & n564_o;
-  -- vhdl_source/cordich_stage.vhdl:136:75
+  -- vhdl_source/cordich_stage.vhdl:137:75
   n566_o <= x_1 (17);
-  -- vhdl_source/cordich_stage.vhdl:137:76
+  -- vhdl_source/cordich_stage.vhdl:138:76
   gen0_cnotr5_n567 <= gen0_cnotr5_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:138:69
+  -- vhdl_source/cordich_stage.vhdl:139:69
   gen0_cnotr5_n568 <= gen0_cnotr5_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:135:16
+  -- vhdl_source/cordich_stage.vhdl:136:16
   gen0_cnotr5 : entity work.cnot_reg_3 port map (
     ctrl => n566_o,
     i => w_mid,
     ctrl_out => gen0_cnotr5_ctrl_out,
     o => gen0_cnotr5_o);
-  -- vhdl_source/cordich_stage.vhdl:139:48
+  -- vhdl_source/cordich_stage.vhdl:140:48
   n573_o <= x_1 (16 downto 3);
-  -- vhdl_source/cordich_stage.vhdl:140:50
+  -- vhdl_source/cordich_stage.vhdl:141:50
   n574_o <= x_1 (2 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:144:19
+  -- vhdl_source/cordich_stage.vhdl:155:19
   n575_o <= as (5);
-  -- vhdl_source/cordich_stage.vhdl:144:27
+  -- vhdl_source/cordich_stage.vhdl:155:27
   n576_o <= a (15 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:144:23
+  -- vhdl_source/cordich_stage.vhdl:155:23
   n577_o <= n575_o & n576_o;
-  -- vhdl_source/cordich_stage.vhdl:147:73
+  -- vhdl_source/cordich_stage.vhdl:158:73
   add2_n578 <= add2_a_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:147:83
+  -- vhdl_source/cordich_stage.vhdl:158:83
   add2_n579 <= add2_s; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:145:8
+  -- vhdl_source/cordich_stage.vhdl:156:8
   add2 : entity work.add_in_place_17 port map (
     a => c_2,
     b => a_cmb,
     a_out => add2_a_out,
     s => add2_s);
-  -- vhdl_source/cordich_stage.vhdl:150:22
+  -- vhdl_source/cordich_stage.vhdl:161:22
   n584_o <= a (16);
-  -- vhdl_source/cordich_stage.vhdl:150:17
+  -- vhdl_source/cordich_stage.vhdl:161:17
   n585_o <= not n584_o;
-  -- vhdl_source/cordich_stage.vhdl:151:23
+  -- vhdl_source/cordich_stage.vhdl:162:23
   n586_o <= as (4);
-  -- vhdl_source/cordich_stage.vhdl:151:17
+  -- vhdl_source/cordich_stage.vhdl:162:17
   n587_o <= not n586_o;
-  -- vhdl_source/cordich_stage.vhdl:155:74
+  -- vhdl_source/cordich_stage.vhdl:166:74
   n588_o <= as (2);
-  -- vhdl_source/cordich_stage.vhdl:156:76
+  -- vhdl_source/cordich_stage.vhdl:167:76
   cnotr6_n589 <= cnotr6_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:156:88
+  -- vhdl_source/cordich_stage.vhdl:167:88
   cnotr6_n590 <= cnotr6_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:154:8
+  -- vhdl_source/cordich_stage.vhdl:165:8
   cnotr6 : entity work.cnot_reg_17 port map (
     ctrl => n588_o,
     i => c_1,
     ctrl_out => cnotr6_ctrl_out,
     o => cnotr6_o);
-  -- vhdl_source/cordich_stage.vhdl:159:75
+  -- vhdl_source/cordich_stage.vhdl:170:75
   n595_o <= c_4 (16);
-  -- vhdl_source/cordich_stage.vhdl:159:89
+  -- vhdl_source/cordich_stage.vhdl:170:89
   n596_o <= c_4 (15 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:160:76
+  -- vhdl_source/cordich_stage.vhdl:171:76
   cnotr7_n597 <= cnotr7_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:160:87
+  -- vhdl_source/cordich_stage.vhdl:171:87
   cnotr7_n598 <= cnotr7_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:158:8
+  -- vhdl_source/cordich_stage.vhdl:169:8
   cnotr7 : entity work.cnot_reg_16 port map (
     ctrl => n595_o,
     i => n596_o,
     ctrl_out => cnotr7_ctrl_out,
     o => cnotr7_o);
-  -- vhdl_source/cordich_stage.vhdl:161:21
+  -- vhdl_source/cordich_stage.vhdl:172:21
   n603_o <= w (0);
-  -- vhdl_source/cordich_stage.vhdl:165:77
+  -- vhdl_source/cordich_stage.vhdl:176:77
   alut1_n604 <= alut1_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:164:8
+  -- vhdl_source/cordich_stage.vhdl:175:8
   alut1 : entity work.angleh_lookup_17_3 port map (
     i => c,
     o => alut1_o);
-  -- vhdl_source/cordich_stage.vhdl:167:79
+  -- vhdl_source/cordich_stage.vhdl:178:79
   alut2_n607 <= alut2_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:166:8
+  -- vhdl_source/cordich_stage.vhdl:177:8
   alut2 : entity work.angleh_lookup_17_3 port map (
     i => c_3,
     o => alut2_o);
@@ -14212,119 +14212,119 @@ begin
     i => y_3,
     ctrl_out => cnotr2_ctrl_out,
     o => cnotr2_o);
-  -- vhdl_source/cordich_stage.vhdl:120:73
-  n436_o <= y (16);
-  -- vhdl_source/cordich_stage.vhdl:121:71
+  -- vhdl_source/cordich_stage.vhdl:121:73
+  n436_o <= y (17);
+  -- vhdl_source/cordich_stage.vhdl:122:71
   n437_o <= w (20 downto 19);
-  -- vhdl_source/cordich_stage.vhdl:122:76
+  -- vhdl_source/cordich_stage.vhdl:123:76
   gen0_cnotr3_n438 <= gen0_cnotr3_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:123:69
+  -- vhdl_source/cordich_stage.vhdl:124:69
   gen0_cnotr3_n439 <= gen0_cnotr3_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:119:16
+  -- vhdl_source/cordich_stage.vhdl:120:16
   gen0_cnotr3 : entity work.cnot_reg_2 port map (
     ctrl => n436_o,
     i => n437_o,
     ctrl_out => gen0_cnotr3_ctrl_out,
     o => gen0_cnotr3_o);
-  -- vhdl_source/cordich_stage.vhdl:124:46
+  -- vhdl_source/cordich_stage.vhdl:125:46
   n444_o <= y (16 downto 2);
-  -- vhdl_source/cordich_stage.vhdl:128:75
+  -- vhdl_source/cordich_stage.vhdl:129:75
   n445_o <= y_4 (15);
-  -- vhdl_source/cordich_stage.vhdl:129:73
+  -- vhdl_source/cordich_stage.vhdl:130:73
   n446_o <= y_4 (17 downto 16);
-  -- vhdl_source/cordich_stage.vhdl:130:76
+  -- vhdl_source/cordich_stage.vhdl:131:76
   gen0_cnotr4_n447 <= gen0_cnotr4_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:130:91
+  -- vhdl_source/cordich_stage.vhdl:131:91
   gen0_cnotr4_n448 <= gen0_cnotr4_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:127:16
+  -- vhdl_source/cordich_stage.vhdl:128:16
   gen0_cnotr4 : entity work.cnot_reg_2 port map (
     ctrl => n445_o,
     i => n446_o,
     ctrl_out => gen0_cnotr4_ctrl_out,
     o => gen0_cnotr4_o);
-  -- vhdl_source/cordich_stage.vhdl:131:40
+  -- vhdl_source/cordich_stage.vhdl:132:40
   n453_o <= y_4 (14 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:132:68
+  -- vhdl_source/cordich_stage.vhdl:133:68
   n454_o <= y (1 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:132:64
+  -- vhdl_source/cordich_stage.vhdl:133:64
   n455_o <= n453_o & n454_o;
-  -- vhdl_source/cordich_stage.vhdl:136:75
+  -- vhdl_source/cordich_stage.vhdl:137:75
   n456_o <= x_1 (17);
-  -- vhdl_source/cordich_stage.vhdl:137:76
+  -- vhdl_source/cordich_stage.vhdl:138:76
   gen0_cnotr5_n457 <= gen0_cnotr5_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:138:69
+  -- vhdl_source/cordich_stage.vhdl:139:69
   gen0_cnotr5_n458 <= gen0_cnotr5_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:135:16
+  -- vhdl_source/cordich_stage.vhdl:136:16
   gen0_cnotr5 : entity work.cnot_reg_2 port map (
     ctrl => n456_o,
     i => w_mid,
     ctrl_out => gen0_cnotr5_ctrl_out,
     o => gen0_cnotr5_o);
-  -- vhdl_source/cordich_stage.vhdl:139:48
+  -- vhdl_source/cordich_stage.vhdl:140:48
   n463_o <= x_1 (16 downto 2);
-  -- vhdl_source/cordich_stage.vhdl:140:50
+  -- vhdl_source/cordich_stage.vhdl:141:50
   n464_o <= x_1 (1 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:144:19
+  -- vhdl_source/cordich_stage.vhdl:155:19
   n465_o <= as (5);
-  -- vhdl_source/cordich_stage.vhdl:144:27
+  -- vhdl_source/cordich_stage.vhdl:155:27
   n466_o <= a (15 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:144:23
+  -- vhdl_source/cordich_stage.vhdl:155:23
   n467_o <= n465_o & n466_o;
-  -- vhdl_source/cordich_stage.vhdl:147:73
+  -- vhdl_source/cordich_stage.vhdl:158:73
   add2_n468 <= add2_a_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:147:83
+  -- vhdl_source/cordich_stage.vhdl:158:83
   add2_n469 <= add2_s; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:145:8
+  -- vhdl_source/cordich_stage.vhdl:156:8
   add2 : entity work.add_in_place_17 port map (
     a => c_2,
     b => a_cmb,
     a_out => add2_a_out,
     s => add2_s);
-  -- vhdl_source/cordich_stage.vhdl:150:22
+  -- vhdl_source/cordich_stage.vhdl:161:22
   n474_o <= a (16);
-  -- vhdl_source/cordich_stage.vhdl:150:17
+  -- vhdl_source/cordich_stage.vhdl:161:17
   n475_o <= not n474_o;
-  -- vhdl_source/cordich_stage.vhdl:151:23
+  -- vhdl_source/cordich_stage.vhdl:162:23
   n476_o <= as (4);
-  -- vhdl_source/cordich_stage.vhdl:151:17
+  -- vhdl_source/cordich_stage.vhdl:162:17
   n477_o <= not n476_o;
-  -- vhdl_source/cordich_stage.vhdl:155:74
+  -- vhdl_source/cordich_stage.vhdl:166:74
   n478_o <= as (2);
-  -- vhdl_source/cordich_stage.vhdl:156:76
+  -- vhdl_source/cordich_stage.vhdl:167:76
   cnotr6_n479 <= cnotr6_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:156:88
+  -- vhdl_source/cordich_stage.vhdl:167:88
   cnotr6_n480 <= cnotr6_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:154:8
+  -- vhdl_source/cordich_stage.vhdl:165:8
   cnotr6 : entity work.cnot_reg_17 port map (
     ctrl => n478_o,
     i => c_1,
     ctrl_out => cnotr6_ctrl_out,
     o => cnotr6_o);
-  -- vhdl_source/cordich_stage.vhdl:159:75
+  -- vhdl_source/cordich_stage.vhdl:170:75
   n485_o <= c_4 (16);
-  -- vhdl_source/cordich_stage.vhdl:159:89
+  -- vhdl_source/cordich_stage.vhdl:170:89
   n486_o <= c_4 (15 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:160:76
+  -- vhdl_source/cordich_stage.vhdl:171:76
   cnotr7_n487 <= cnotr7_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:160:87
+  -- vhdl_source/cordich_stage.vhdl:171:87
   cnotr7_n488 <= cnotr7_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:158:8
+  -- vhdl_source/cordich_stage.vhdl:169:8
   cnotr7 : entity work.cnot_reg_16 port map (
     ctrl => n485_o,
     i => n486_o,
     ctrl_out => cnotr7_ctrl_out,
     o => cnotr7_o);
-  -- vhdl_source/cordich_stage.vhdl:161:21
+  -- vhdl_source/cordich_stage.vhdl:172:21
   n493_o <= w (0);
-  -- vhdl_source/cordich_stage.vhdl:165:77
+  -- vhdl_source/cordich_stage.vhdl:176:77
   alut1_n494 <= alut1_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:164:8
+  -- vhdl_source/cordich_stage.vhdl:175:8
   alut1 : entity work.angleh_lookup_17_2 port map (
     i => c,
     o => alut1_o);
-  -- vhdl_source/cordich_stage.vhdl:167:79
+  -- vhdl_source/cordich_stage.vhdl:178:79
   alut2_n497 <= alut2_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:166:8
+  -- vhdl_source/cordich_stage.vhdl:177:8
   alut2 : entity work.angleh_lookup_17_2 port map (
     i => c_3,
     o => alut2_o);
@@ -14539,119 +14539,119 @@ begin
     i => y_3,
     ctrl_out => cnotr2_ctrl_out,
     o => cnotr2_o);
-  -- vhdl_source/cordich_stage.vhdl:120:73
-  n326_o <= y (16);
-  -- vhdl_source/cordich_stage.vhdl:121:71
+  -- vhdl_source/cordich_stage.vhdl:121:73
+  n326_o <= y (17);
+  -- vhdl_source/cordich_stage.vhdl:122:71
   n327_o <= w (19);
-  -- vhdl_source/cordich_stage.vhdl:122:76
+  -- vhdl_source/cordich_stage.vhdl:123:76
   gen0_cnotr3_n328 <= gen0_cnotr3_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:123:69
+  -- vhdl_source/cordich_stage.vhdl:124:69
   gen0_cnotr3_n329 <= gen0_cnotr3_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:119:16
+  -- vhdl_source/cordich_stage.vhdl:120:16
   gen0_cnotr3 : entity work.cnot_reg_1 port map (
     ctrl => n326_o,
     i => n327_o,
     ctrl_out => gen0_cnotr3_ctrl_out,
     o => gen0_cnotr3_o);
-  -- vhdl_source/cordich_stage.vhdl:124:46
+  -- vhdl_source/cordich_stage.vhdl:125:46
   n334_o <= y (16 downto 1);
-  -- vhdl_source/cordich_stage.vhdl:128:75
+  -- vhdl_source/cordich_stage.vhdl:129:75
   n335_o <= y_4 (16);
-  -- vhdl_source/cordich_stage.vhdl:129:73
+  -- vhdl_source/cordich_stage.vhdl:130:73
   n336_o <= y_4 (17);
-  -- vhdl_source/cordich_stage.vhdl:130:76
+  -- vhdl_source/cordich_stage.vhdl:131:76
   gen0_cnotr4_n337 <= gen0_cnotr4_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:130:91
+  -- vhdl_source/cordich_stage.vhdl:131:91
   gen0_cnotr4_n338 <= gen0_cnotr4_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:127:16
+  -- vhdl_source/cordich_stage.vhdl:128:16
   gen0_cnotr4 : entity work.cnot_reg_1 port map (
     ctrl => n335_o,
     i => n336_o,
     ctrl_out => gen0_cnotr4_ctrl_out,
     o => gen0_cnotr4_o);
-  -- vhdl_source/cordich_stage.vhdl:131:40
+  -- vhdl_source/cordich_stage.vhdl:132:40
   n343_o <= y_4 (15 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:132:68
+  -- vhdl_source/cordich_stage.vhdl:133:68
   n344_o <= y (0);
-  -- vhdl_source/cordich_stage.vhdl:132:64
+  -- vhdl_source/cordich_stage.vhdl:133:64
   n345_o <= n343_o & n344_o;
-  -- vhdl_source/cordich_stage.vhdl:136:75
+  -- vhdl_source/cordich_stage.vhdl:137:75
   n346_o <= x_1 (17);
-  -- vhdl_source/cordich_stage.vhdl:137:76
+  -- vhdl_source/cordich_stage.vhdl:138:76
   gen0_cnotr5_n347 <= gen0_cnotr5_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:138:69
+  -- vhdl_source/cordich_stage.vhdl:139:69
   gen0_cnotr5_n348 <= gen0_cnotr5_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:135:16
+  -- vhdl_source/cordich_stage.vhdl:136:16
   gen0_cnotr5 : entity work.cnot_reg_1 port map (
     ctrl => n346_o,
     i => w_mid,
     ctrl_out => gen0_cnotr5_ctrl_out,
     o => gen0_cnotr5_o);
-  -- vhdl_source/cordich_stage.vhdl:139:48
+  -- vhdl_source/cordich_stage.vhdl:140:48
   n353_o <= x_1 (16 downto 1);
-  -- vhdl_source/cordich_stage.vhdl:140:50
+  -- vhdl_source/cordich_stage.vhdl:141:50
   n354_o <= x_1 (0);
-  -- vhdl_source/cordich_stage.vhdl:144:19
+  -- vhdl_source/cordich_stage.vhdl:155:19
   n355_o <= as (5);
-  -- vhdl_source/cordich_stage.vhdl:144:27
+  -- vhdl_source/cordich_stage.vhdl:155:27
   n356_o <= a (15 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:144:23
+  -- vhdl_source/cordich_stage.vhdl:155:23
   n357_o <= n355_o & n356_o;
-  -- vhdl_source/cordich_stage.vhdl:147:73
+  -- vhdl_source/cordich_stage.vhdl:158:73
   add2_n358 <= add2_a_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:147:83
+  -- vhdl_source/cordich_stage.vhdl:158:83
   add2_n359 <= add2_s; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:145:8
+  -- vhdl_source/cordich_stage.vhdl:156:8
   add2 : entity work.add_in_place_17 port map (
     a => c_2,
     b => a_cmb,
     a_out => add2_a_out,
     s => add2_s);
-  -- vhdl_source/cordich_stage.vhdl:150:22
+  -- vhdl_source/cordich_stage.vhdl:161:22
   n364_o <= a (16);
-  -- vhdl_source/cordich_stage.vhdl:150:17
+  -- vhdl_source/cordich_stage.vhdl:161:17
   n365_o <= not n364_o;
-  -- vhdl_source/cordich_stage.vhdl:151:23
+  -- vhdl_source/cordich_stage.vhdl:162:23
   n366_o <= as (4);
-  -- vhdl_source/cordich_stage.vhdl:151:17
+  -- vhdl_source/cordich_stage.vhdl:162:17
   n367_o <= not n366_o;
-  -- vhdl_source/cordich_stage.vhdl:155:74
+  -- vhdl_source/cordich_stage.vhdl:166:74
   n368_o <= as (2);
-  -- vhdl_source/cordich_stage.vhdl:156:76
+  -- vhdl_source/cordich_stage.vhdl:167:76
   cnotr6_n369 <= cnotr6_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:156:88
+  -- vhdl_source/cordich_stage.vhdl:167:88
   cnotr6_n370 <= cnotr6_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:154:8
+  -- vhdl_source/cordich_stage.vhdl:165:8
   cnotr6 : entity work.cnot_reg_17 port map (
     ctrl => n368_o,
     i => c_1,
     ctrl_out => cnotr6_ctrl_out,
     o => cnotr6_o);
-  -- vhdl_source/cordich_stage.vhdl:159:75
+  -- vhdl_source/cordich_stage.vhdl:170:75
   n375_o <= c_4 (16);
-  -- vhdl_source/cordich_stage.vhdl:159:89
+  -- vhdl_source/cordich_stage.vhdl:170:89
   n376_o <= c_4 (15 downto 0);
-  -- vhdl_source/cordich_stage.vhdl:160:76
+  -- vhdl_source/cordich_stage.vhdl:171:76
   cnotr7_n377 <= cnotr7_ctrl_out; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:160:87
+  -- vhdl_source/cordich_stage.vhdl:171:87
   cnotr7_n378 <= cnotr7_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:158:8
+  -- vhdl_source/cordich_stage.vhdl:169:8
   cnotr7 : entity work.cnot_reg_16 port map (
     ctrl => n375_o,
     i => n376_o,
     ctrl_out => cnotr7_ctrl_out,
     o => cnotr7_o);
-  -- vhdl_source/cordich_stage.vhdl:161:21
+  -- vhdl_source/cordich_stage.vhdl:172:21
   n383_o <= w (0);
-  -- vhdl_source/cordich_stage.vhdl:165:77
+  -- vhdl_source/cordich_stage.vhdl:176:77
   alut1_n384 <= alut1_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:164:8
+  -- vhdl_source/cordich_stage.vhdl:175:8
   alut1 : entity work.angleh_lookup_17_1 port map (
     i => c,
     o => alut1_o);
-  -- vhdl_source/cordich_stage.vhdl:167:79
+  -- vhdl_source/cordich_stage.vhdl:178:79
   alut2_n387 <= alut2_o; -- (signal)
-  -- vhdl_source/cordich_stage.vhdl:166:8
+  -- vhdl_source/cordich_stage.vhdl:177:8
   alut2 : entity work.angleh_lookup_17_1 port map (
     i => c_3,
     o => alut2_o);

@@ -81,7 +81,8 @@ begin
 
 		--This is for input files
 		file_open(fin, "input.txt", read_mode);
-		file_open(fout, "output.txt", write_mode);
+		file_open(fout, "sim/cordic_n" & to_string(size)
+			& "_stages" & to_string(stages) & ".sim", write_mode);
 		while not endfile(fin) loop
 			--Report progress for long tests
 			num := num + 1;

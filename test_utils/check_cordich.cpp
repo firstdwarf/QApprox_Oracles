@@ -32,6 +32,12 @@ int main(int argc, char** argv)	{
 
 	std::ifstream in(of);
 	std::ofstream out(of + ".al", std::ofstream::out);
+
+	if(!in.is_open() || !out.is_open())	{
+		std::cout << "Error opening input or output file" << std::endl;
+		exit(0);
+	}
+
 	char line[100];
 	double angle;
 	double a, b;
